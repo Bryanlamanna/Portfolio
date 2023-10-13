@@ -44,12 +44,12 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 60px;
     }
     
     .land {
         font-size: 30px;
-        margin: 10%;
+        margin: 15px;
         height: 700px;
     }
     
@@ -60,6 +60,8 @@
     
        
     .content {
+        margin-top: 50px;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: left;
@@ -97,8 +99,8 @@
     }
     
     .bt {
-        
-        margin-top: 30px;
+        position: absolute;
+        margin-top: 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -156,10 +158,10 @@
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 1000px;
-        margin-bottom: 100px;
+        height: 500px;
+       
         padding: 50px;
-        padding-bottom: 300px;
+       
     }
     
     #profile {
@@ -201,7 +203,12 @@
         font-size: 50px;
     }
 
-   
+   .sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
 }
 
 @media (max-width: 768px) /*MOBILE*/ {
@@ -232,11 +239,13 @@
     }
     
     #iconcode {
+       transform: translate(50px,0); 
+       position: absolute;
        margin-left: 25px;
        margin-right: 25px;
        width: 400px;
        transition: .3s;
-       margin-top: 50px;
+       margin-top: 700px;
        margin-bottom: 25px;
     }
     
@@ -244,7 +253,7 @@
         transform: scale(105%);
      }
     
-    .home {
+    .info {
         display: flex;
         flex-direction: column  ;
         justify-content: center;
@@ -258,7 +267,7 @@
         height: 700px;
     }
     
-    .home i {
+    .info i {
        
        font-size: 800%;
     }   
