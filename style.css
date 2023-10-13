@@ -212,6 +212,10 @@
 }
 
 @media (max-width: 768px) /*MOBILE*/ {
+ html {
+    scroll-behavior: smooth;
+}
+
     * {
         padding: 0;
         margin: 0;
@@ -239,14 +243,10 @@
     }
     
     #iconcode {
-       transform: translate(50px,0); 
-       position: absolute;
-       margin-left: 25px;
-       margin-right: 25px;
        width: 400px;
        transition: .3s;
-       margin-top: 700px;
-       margin-bottom: 25px;
+      display: none;
+       
     }
     
     #iconcode:hover {
@@ -267,11 +267,7 @@
         height: 700px;
     }
     
-    .info i {
-       
-     
-    }   
-    
+  
     .content {
         justify-content: center;
         align-items: center;
@@ -388,15 +384,15 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        height: 500px;
         margin-bottom: 100px;
         padding: 50px;
         padding-bottom: 300px;
     }
     
     #profile {
-        margin-top: 300px;
-        margin-bottom: 50px;
+        margin-top: 460px;
+        margin-bottom: 20px;
         max-width: 100%;
         height: auto;
         border-radius: 5px;
@@ -409,9 +405,9 @@
         transform: scale(102%);
     }
     
-    .about-text {
-      margin-left: 3%;
-      
+    .contactbt {
+        display: flex;
+        justify-content: center;
     }
     
     .skills {
@@ -431,7 +427,12 @@
     .about-text {
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: justify;
+        width: 99%;
+    }
+
+    .text-about {
+        
     }
 
     .about-text button {
