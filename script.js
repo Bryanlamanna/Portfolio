@@ -1,7 +1,27 @@
+
 var theme = 1;
 
+
+    var body = document.body;
+    var botoeshd = document.querySelectorAll('.botaoheader');
+    var botoesbd = document.querySelectorAll('.botaobody');
+
+
+    body.classList.add('darkmode');
+    
+    for (var i = 0 ; i < botoesbd.length ; i++) {
+        botoesbd[i].style.color = 'white';
+    }
+
+    for (var i = 0 ; i < botoeshd.length ; i++) {
+        botoeshd[i].style.color = 'white';
+    }
+
+    
+
+
 function fade() {
-  
+    
     var body = document.body;
     var botoeshd = document.querySelectorAll('.botaoheader');
     var botoesbd = document.querySelectorAll('.botaobody');

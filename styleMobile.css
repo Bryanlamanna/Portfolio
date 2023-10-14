@@ -1,0 +1,230 @@
+@media (max-width: 768px) /*MOBILE*/ {
+    html {
+       scroll-behavior: smooth;
+   }
+   
+       * {
+           padding: 0;
+           margin: 0;
+           font-family: 'Lato';
+           text-decoration-color: transparent;
+       }
+       
+       body {
+           height: 100vh;
+           width: 100%;
+           color: black;
+           transition: .5s;
+       }
+       
+       .header-box {
+           gap: 10px;
+           padding: 20px;
+           text-align: right;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: right;
+           align-items: right;
+           
+       }
+       
+       #iconcode {
+          width: 400px;
+          transition: .3s;
+         display: none;
+          
+       }
+       
+       #iconcode:hover {
+           transform: scale(105%);
+        }
+       
+       .info {
+           display: flex;
+           flex-direction: column  ;
+           justify-content: center;
+           align-items: center;
+           margin-top: 100px;
+       }
+       
+       .home {
+           font-size: 30px;
+           margin: 10%;
+           height: 700px;
+       }
+       
+     
+       .home-box {
+           justify-content: center;
+           align-items: center;
+           text-align: left;
+             
+       }
+       
+       #name {
+           color: aqua;
+           cursor: pointer;
+           transition: .4s;
+           border: none;
+           background-color: transparent;
+       }
+       
+       #name-text {
+           background-color: transparent;
+       }
+       
+       #name:hover {
+           outline: none;
+           border: none;
+           color: aqua;
+           cursor: pointer;
+           transform: translate(-1px,-1px);
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+           background-color: transparent;
+       }
+       
+       .botaobody {
+           margin: 5px;
+       }
+       
+       .bt a {
+           text-decoration: 0;
+       }
+       
+       .bt {
+           text-align: center;
+           margin-top: 30px;
+           margin-bottom: 50px;
+           justify-content: center;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           align-items: center;
+           
+       }
+       
+       .botaoheader  {
+           font-size: 15px;
+           margin-left: 5px;
+           border: double .5px transparent;
+           background-color: white;
+           cursor: pointer;
+           transition: .3s;
+           letter-spacing: 1px;
+           padding: 3px;
+           background-color: transparent;
+           border-radius: 5px;
+           text-decoration: none;
+          
+       }    
+   
+       .botaobody {
+           font-size: 20px;
+           margin-left: 5px;
+           border: double .5px transparent;
+           background-color: white;
+           cursor: pointer;
+           transition: .3s;
+           letter-spacing: 1px;
+           padding: 3px;
+           background-color: transparent;
+           border-radius: 5px;
+           text-decoration: none;
+       }
+       
+       
+       .botaobody:hover, .botaoheader:hover{
+           transform: translate(-1px,-1px);
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+           border: double .5px;
+       }
+       
+       .botaobody:active, .botaoheader:active {
+           transform: scale(90%);
+       }
+       
+       #botao {
+           
+           transition: .5;
+       }
+       
+       #darkmode-bt {
+           background-color: transparent;
+           border: none;
+           position: absolute;
+           left: 15px;
+           cursor: pointer;
+       }
+       
+       .darkmode {
+           color: white;
+           background-color: rgb(36, 35, 43);
+       }
+       
+       .darkmodebotoes {
+           color: white;
+       }
+       
+       .about {
+           margin: 0;
+           justify-content: center;
+           display: flex;
+           flex-direction: column;
+           height: 500px;
+           margin-bottom: 100px;
+           padding: 50px;
+           padding-bottom: 300px;
+       }
+       
+       #profile {
+           margin-top: 460px;
+           margin-bottom: 20px;
+           max-width: 100%;
+           height: auto;
+           border-radius: 5px;
+           box-shadow: 5px 5px 10px rgba(0,0,0,50%);
+           border: double .5px;
+           transition: .3s;
+       }
+       
+       #profile:hover {
+           transform: scale(102%);
+       }
+       
+       .contactbt {
+           display: flex;
+           justify-content: center;
+       }
+       
+       .skills {
+           margin: 0;
+           justify-content: left;
+           display: flex;
+           height: 1000px;
+           margin-bottom: 100px;
+           padding: 50px;
+           padding-bottom: 300px;
+       }
+       
+       #iconskill {
+           font-size: 50px;
+       }
+   
+       .about-text {
+           justify-content: center;
+           align-items: center;
+           text-align: justify;
+           width: 99%;
+       }
+   
+       .text-about {
+           
+       }
+   
+       .about-text button {
+           
+           margin-top: 30px;
+       }
+       
+   }
