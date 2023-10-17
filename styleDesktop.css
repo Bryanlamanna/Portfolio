@@ -207,14 +207,16 @@
         display: grid;
         place-items: center;
         text-align: center;
+        text-align: center;
         justify-content: center;
         
     }
 
     .proficiencias {
         width: 100%;
-        
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -259,7 +261,8 @@
     .icons-table {
         font-size: 13px;
         display: flex;
-        display: table-caption;
+        align-items: center;
+        justify-content: center;
         
     }
 
@@ -275,8 +278,10 @@
     }
 
     .tecnologias {
-        display: block;
-        justify-content: right;
+        display: flex;
+        
+        width: 500px;
+        justify-content: space-around;
         text-align: center;
         align-items: center;
     }
