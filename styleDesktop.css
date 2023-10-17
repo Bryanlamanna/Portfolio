@@ -65,12 +65,12 @@
     .home {
         display: flex;
         justify-content: space-around;   
-        height: 700px;   
+        height: 800px;   
     }
 
      .home-box {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -102,8 +102,7 @@
         transform: translate(-1px,-1px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
         background-color: transparent;
-    }
-    
+    }    
 
     .bt a {
         text-decoration: 0;
@@ -166,16 +165,20 @@
         color: white;
     }
     
-    .sobre {
+    .about {
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 700px;
-       
-        padding: 50px;
-       
+        height: 800px;       
+        padding: 50px;       
     }
     
+   .about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+   
     #profile {
         margin: 0;
         height: 350px;
@@ -185,12 +188,12 @@
         border: double .5px;
         transition: .3s;
     }
-    
+
     #profile:hover {
         transform: scale(102%);
     }
     
-    .about-text {
+    .about-text, .skill-text {
       margin-left: 3%;
       
     }
@@ -198,36 +201,86 @@
     #text-about {
         margin-bottom: 140px ;
     }
-    
-    .skills td{
-        margin: 10px;
-        justify-content: center;
-        align-items: center;
-        display: block;
-              
-    }
-    
-    .habilidades {
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .skills {
+        height: 800px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        justify-content: center;
         
     }
 
-    #iconskill {
-        font-size: 50px;
+    .proficiencias {
+        width: 100%;
+        
+        text-align: left;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        
     }
 
-   .about-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
+    .backend-bar, .frontend-bar, .design-bar {        
+        width: 900px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        margin-top: 8px;
+    }
 
+    .frontend-progress {
+        width: 75%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+    .design-progress {
+        width: 60%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+
+
+    .backend-progress {
+        width: 95%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+    .frontend, .backend, .design {
+        margin-top: 15px;
+    }
+    
+    .icons-table {
+        font-size: 13px;
+        display: flex;
+        display: table-caption;
+        
+    }
+
+    .icons-table i {
+        font-size: 70px;
+        margin: 10px;   
+        transition: .3s; 
+        cursor: pointer;
+    }
+
+    .icons-table i:hover {
+        color: rgb(110, 110, 110);        
+    }
+
+    .tecnologias {
+        display: block;
+        justify-content: right;
+        text-align: center;
+        align-items: center;
+    }
+
+    
 }
 

@@ -15,10 +15,10 @@
                     <button id="darkmode-bt" onclick="fade()" class="botaoheader">
                         <i class="fa-regular fa-moon"></i>
                     </button>
-                    <a href="#sobre" target="_self" rel="noopener noreferrer">
+                    <a href="#about" target="_self" rel="noopener noreferrer">
                         <button id="botao" class="botaoheader">Sobre Mim</button>
                     </a>
-                    <a href="#habilidades" target="_self" rel="noopener noreferrer">
+                    <a href="#skills" target="_self" rel="noopener noreferrer">
                         <button id="botao" class="botaoheader">Skills</button>
                     </a>
                     <a href="http://" target="_blank" rel="noopener noreferrer">
@@ -57,7 +57,7 @@
             
         </section>
 
-        <section class="sobre" id="sobre">
+        <section class="about" id="about">
             <div class="about-box">
                 <img id="profile" src="assets/profile.png" alt="">
             
@@ -69,52 +69,80 @@
                         Minha jornada é impulsionada pela busca constante da excelência, onde cada projeto é uma oportunidade de inovação e aprendizado. 
                         Estou ansioso para compartilhar minha visão e colaborar com você para alcançar seus objetivos criativos."</p>
                         <div class="contactbt">
-                                <a href="" class="cv">
+                                <a href="CV de Bryan Lamanna.pdf" class="cv" download="CV de Bryan Lamanna.pdf">
                                 <button class="botaobody" id="botao">
                                     <i class="fa-regular fa-file-pdf"></i>
                                     Baixar CV
                                 </button>
                             </a>
-                            <a href="" class="cv">
-                                <button class="botaobody" id="botao">
+                            
+                                <button onclick="copyEmail()" class="botaobody" id="botao">
                                     <i class="fa-regular fa-copy"></i>
                                     E-mail
                                 </button>
-                            </a>
+                            
                         </div>    
                 </div>
             </div>
         </section>
 
-        <section class="habilidades" id="habilidades">
+        <section class="skills" id="skills">
+            
+            <div class="proficiencias">
+                <div class="backend">
+                    <p>Back-End</p>
+                    <div class="backend-bar">
+                        <div class="backend-progress"></div>
+                    </div>
+                </div>
+                <div class="frontend">    
+                    <p>Front-End</p>
+                    <div class="frontend-bar">
+                        <div class="frontend-progress"></div>
+                    </div>
+                </div>
+                <div class="design">   
+                    <p>Design</p>
+                    <div class="design-bar">
+                        <div class="design-progress"></div>
+                    </div>
+                </div>    
+            </div>
 
-            <div class="table-skills">
-                <table class="skills">
+            <div class="tecnologias">
+                <table class="icons-table">
                     <tr>
                         <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-brands fa-java"></i>
+                            <i class="fa-brands fa-java"></i>
+                            Java
                         </td>
                         <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-brands fa-js"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
+                            JavaScript
                         </td>
                         <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-brands fa-html5"></i>    
-                        </td>
-                    </tr>
-                    <tr>
+                            <i class="fa-solid fa-database"></i>
+                            SQL/MongoDB
+                        </td>                                      
                         <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-solid fa-database"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS 3
                         </td>
                         <td>
-                            <i id="iconskill" style="width: 50px; height: 50px;" class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            HTML 5
+                        </td>
+                        <td>
+                            <i class="fa-brands fa-figma"></i>
+                            Figma
                         </td>
                     </tr>
                 </table>
+                <div class="texto-tecnologias">
+                    <p>
+
+                    </p>
+                </div>
             </div>
 
         </section>
