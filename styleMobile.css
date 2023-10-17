@@ -170,7 +170,7 @@
            color: white;
        }
        
-       .sobre {
+       .about {
            margin: 0;
            justify-content: center;
            display: flex;
@@ -227,7 +227,7 @@
        }
        
 
-        .habilidades {
+        .skills {
             height: 900px;
             display: flex;
             flex-direction: column;

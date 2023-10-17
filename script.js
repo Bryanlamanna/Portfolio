@@ -52,8 +52,8 @@ function fade() {
     theme=1;      
 }
 
-function fadetolight() {
-    var body = document.body;
+function copyEmail() {
 
-    body.classList.remove('darkmode');
+    navigator.clipboard.writeText('LamannaBryan@gmail.com');
+
 }
