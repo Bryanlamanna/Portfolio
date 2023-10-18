@@ -9,8 +9,9 @@ var theme = 1;
 var body = document.body;
 var botoeshd = document.querySelectorAll('.botaoheader');
 var botoesbd = document.querySelectorAll('.botaobody');
+var header = document.querySelector('.header');
 
-
+header.classList.add('darkmodehd');
 body.classList.add('darkmode');
 
 for (var i = 0 ; i < botoesbd.length ; i++) {
@@ -26,9 +27,12 @@ function fade() {
 var body = document.body;
 var botoeshd = document.querySelectorAll('.botaoheader');
 var botoesbd = document.querySelectorAll('.botaobody');
+var header = document.querySelector('.header');
+
 
 if (theme == 1){
 body.classList.add('darkmode');
+header.classList.add('darkmodehd');
 
 for (var i = 0 ; i < botoesbd.length ; i++) {
     botoesbd[i].style.color = 'white';
@@ -42,6 +46,7 @@ return;
 }
 
 body.classList.remove('darkmode');
+header.classList.remove('darkmodehd');
     
 for (var i = 0 ; i < botoesbd.length ; i++) {
     botoesbd[i].style.color = 'black';
