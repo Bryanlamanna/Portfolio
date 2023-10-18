@@ -274,18 +274,38 @@
     }
 
     .icons-table i:hover {
-        color: rgb(110, 110, 110);        
+        color: rgb(110, 110, 110);
+        transform: scale(110%);        
+    }
+
+    .tabela-tecnologias {
+        width: 500px;
     }
 
     .tecnologias {
         display: flex;
-        
-        width: 500px;
-        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        justify-content: center;
         text-align: center;
         align-items: center;
     }
 
-    
+    .info-tecnologias {
+        position: relative;
+        justify-content: center;
+        height: 10em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto-tecnologias {
+        
+        position: absolute;
+        align-items: center;
+    }
+
+
 }
 
