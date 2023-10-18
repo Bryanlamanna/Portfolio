@@ -24,7 +24,18 @@
 
     /*ESTILOS PARA O CABEÇALHO*/
 
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(36, 35, 43, .8);
+        z-index: 100; 
+
+    }
+
     .header-box {
+            
             gap: 10px;
             padding: 20px;
             text-align: right;
@@ -301,7 +312,7 @@
     }
 
     .texto-tecnologias {
-        
+        transition: .5s;
         position: absolute;
         align-items: center;
     }
