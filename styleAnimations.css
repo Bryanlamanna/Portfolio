@@ -1,0 +1,56 @@
+
+[data-anime] {
+    opacity: 0; 
+    transition: 1s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-80px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(80px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 80px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+[data-animeHome] {
+    opacity: 0; 
+    transition: 1s;
+}
+
+[data-animeHome="left"] {
+    transform: translate3d(-80px, 0, 0);
+}
+
+[data-animeHome="right"] {
+    transform: translate3d(80px, 0, 0);
+}
+
+[data-animeHome].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-animeSkill] {
+    opacity: 0; 
+    transition: .5s;
+}
+
+[data-animeSkill="bottom"] {
+    transform: translate3d(0, 80px, 0);
+}
+
+[data-animeSkill].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+

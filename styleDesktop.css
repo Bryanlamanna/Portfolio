@@ -3,6 +3,8 @@
 @media (min-width: 769px) /*DESKTOP*/{
    
     /*ESTILOS GERAIS PARA A PAGINA*/
+
+   
     
     html {
         scroll-behavior: smooth;
@@ -76,7 +78,7 @@
     .home {
         display: flex;
         justify-content: space-around;   
-        height: 800px;   
+        height: 100vh;   
     }
 
      .home-box {
@@ -184,11 +186,12 @@
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 800px;       
+        height: 600p;       
         padding: 50px;       
     }
     
    .about-box {
+    margin-top: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,12 +204,9 @@
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0,0,0,50%);
         border: double .5px;
-        transition: .3s;
+        
     }
-
-    #profile:hover {
-        transform: scale(102%);
-    }
+  
     
     .about-text, .skill-text {
       margin-left: 3%;
@@ -316,7 +316,7 @@
     }
 
     .texto-tecnologias {
-        transition: .5s;
+        
         position: absolute;
         align-items: center;
     }

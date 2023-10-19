@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="styleDesktop.css">
+    <link rel="stylesheet" type="text/css" href="styleAnimations.css">
     <link rel="stylesheet" type="text/css" href="styleMobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
@@ -13,7 +14,7 @@
     <main>
         <section class="header">
             <div class="header-box">
-                    <button id="darkmode-bt" onclick="fade()" class="botaoheader">
+                    <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
                         <i class="fa-regular fa-moon"></i>
                     </button>
                     <a href="#about" target="_self" rel="noopener noreferrer">
@@ -34,7 +35,7 @@
 
         <section class="home">
             <div class="home-box">
-                    <div class="info">
+                    <div class="info" data-animeHome="left">
                         <h1 id="name-text">Meu nome é <span id="name">Bryan Lamanna</span>, <br>sou um desenvolvedor</h1>
                         <div class="bt">
                             <a href="https://github.com/Bryanlamanna" target="_blank">
@@ -51,7 +52,7 @@
                             </a>
                         </div>                                             
                     </div>
-                    <div class="imagem">
+                    <div class="imagem" data-animeHome="right">
                         <img src="assets/nano.png" id="iconcode" alt="">
                     </div>                        
             </div>
@@ -60,9 +61,9 @@
 
         <section class="about" id="about">
             <div class="about-box">
-                <img id="profile" src="assets/profile.png" alt="">
+                <img id="profile" src="assets/profile.png" data-anime="left">
             
-                <div class="about-text">
+                <div class="about-text" data-anime="right">
                     <h1 style="color: aqua; font-size: 30px;">Bryan Lamanna</h1>
                     <h2 style="font-size: 15px; margin-bottom: 20px;">Porto Alegre, RS</h2>
                     <p id="text-about" style="font-size: 20px;">"Sou [Seu Nome], um [Sua Profissão ou Área de Atuação] apaixonado por [Sua Paixão ou Interesse Principal]. 
@@ -88,29 +89,8 @@
         </section>
 
         <section class="skills" id="skills">
-            
-            <div class="proficiencias">
-                <div class="backend">
-                    <p>Back-End</p>
-                    <div class="backend-bar">
-                        <div class="backend-progress"></div>
-                    </div>
-                </div>
-                <div class="frontend">    
-                    <p>Front-End</p>
-                    <div class="frontend-bar">
-                        <div class="frontend-progress"></div>
-                    </div>
-                </div>
-                <div class="design">   
-                    <p>Design</p>
-                    <div class="design-bar">
-                        <div class="design-progress"></div>
-                    </div>
-                </div>    
-            </div>
-
-            <div class="tecnologias">                
+                       
+            <div class="tecnologias" data-anime="bottom">                
                 <div class="tabela-tecnologias">
                     <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 5px;">
                         Tecnologias:
@@ -119,31 +99,31 @@
                         <tr>
                             <td style="font-size: 80px;"><</td>
                             <td>
-                                <i class="fa-brands fa-java" onclick="show(0)"></i>
+                                <i class="fa-brands fa-java" onclick="showSkill(0)"></i>
                                 Java
                             </td>
                             <td>
-                                <i class="fa-brands fa-square-js" onclick="show(1)"></i>
+                                <i class="fa-brands fa-square-js" onclick="showSkill(1)"></i>
                                 JavaScript
                             </td>
                             <td>
-                                <i class="fa-solid fa-database" onclick="show(2)"></i>
+                                <i class="fa-solid fa-database" onclick="showSkill(2)"></i>
                                 SQL/MongoDB
                             </td>                                      
                             <td>
-                                <i class="fa-brands fa-css3-alt" onclick="show(3)"></i>
+                                <i class="fa-brands fa-css3-alt" onclick="showSkill(3)"></i>
                                 CSS 3
                             </td>
                             <td>
-                                <i class="fa-brands fa-html5" onclick="show(4)"></i>
+                                <i class="fa-brands fa-html5" onclick="showSkill(4)"></i>
                                 HTML 5
                             </td>
                             <td>
-                                <i class="fa-brands fa-figma" onclick="show(5)"></i>
+                                <i class="fa-brands fa-figma" onclick="showSkill(5)"></i>
                                 Figma
                             </td>
                             <td>
-                                <i class="fa-brands fa-git-alt" onclick="show(6)"></i>
+                                <i class="fa-brands fa-git-alt" onclick="showSkill(6)"></i>
                                 Git/GitHub
                             </td>
                             <td style="font-size: 80px;">/></td>
@@ -151,7 +131,7 @@
                     </table>
                 </div>
                 <div class="info-tecnologias">    
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                             <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                                 Java
                             </h1>
@@ -159,7 +139,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore non voluptatibus fugiat commodi voluptas eveniet sit ab quibusdam rerum reprehenderit nesciunt ex fugit placeat laudantium eos fuga, accusamus natus consequatur?
                         </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                             <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                                 JavaScript
                             </h1>
@@ -167,7 +147,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, at ad! Veritatis, assumenda ipsam quod earum dignissimos at quidem quis corporis? Inventore enim vitae nihil nobis pariatur, quaerat non obcaecati!
                         </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                         <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                             MySql / MongoDB
                         </h1>
@@ -175,7 +155,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est commodi velit iste tempore non repellendus in? Officiis consequuntur aut numquam dolor iusto ratione, placeat impedit magni fuga sequi libero.
                     </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                         <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                             CSS 3
                         </h1>
@@ -183,7 +163,7 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corrupti quam voluptatem perspiciatis delectus soluta odit sint quae dolorum, nostrum debitis sed architecto aspernatur nulla modi. Nam aspernatur quam quos?
                     </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                         <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                             HTML 5
                         </h1>
@@ -191,7 +171,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, enim culpa assumenda aliquid expedita fugit deserunt libero, aperiam perferendis totam nam? Facere aut laborum voluptas repellat error nobis perferendis hic.
                     </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                         <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                             Figma
                         </h1>
@@ -199,7 +179,7 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sint eligendi laboriosam eius, officiis excepturi debitis nam modi, corrupti vero consectetur, repellendus alias quae! Asperiores amet temporibus similique beatae quos.
                     </p>
                     </div>
-                    <div class="texto-tecnologias">
+                    <div class="texto-tecnologias" data-animeSkill="bottom">
                         <h1 style="color: aqua; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
                             Git / GitHub
                         </h1>
