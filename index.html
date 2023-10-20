@@ -17,6 +17,9 @@
                     <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
                         <i class="fa-regular fa-moon"></i>
                     </button>
+                    <a href="#inicio" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Home</button>
+                    </a>
                     <a href="#about" target="_self" rel="noopener noreferrer">
                         <button id="botao" class="botaoheader">Sobre Mim</button>
                     </a>
@@ -33,7 +36,7 @@
             </div> 
         </section>
 
-        <section class="home">
+        <section class="home" id="inicio">
             <div class="home-box">
                     <div class="info" data-animeHome="left">
                         <h1 id="name-text">Meu nome é <span id="name">Bryan Lamanna</span>, <br>sou um desenvolvedor</h1>
@@ -76,7 +79,7 @@
                                     <i class="fa-regular fa-file-pdf"></i>
                                     Baixar CV
                                 </button>
-                            </a>
+                                </a>
                             
                                 <button onclick="copyEmail()" class="botaobody" id="botao">
                                     <i class="fa-regular fa-copy"></i>
@@ -190,7 +193,14 @@
                 </div>
             </div>    
         </section>
+        <a  href="#inicio" target="_self" rel="noopener noreferrer">
+            <button id="returnHomeBt">
+                <i class="fa-solid fa-angles-up"></i>
+                Voltar ao topo
+            </button>
+        </a>             
     </main>
+        
     <script src="script.js"></script>
 </body>
 </html>

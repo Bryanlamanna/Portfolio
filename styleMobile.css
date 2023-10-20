@@ -13,12 +13,16 @@
        }
        
        body {
+           max-width: 100%;
            height: 100vh;
            width: 100%;
            color: black;
            transition: .5s;
+           margin: 0;
        }
        
+
+
        .header-box {
            gap: 10px;
            padding: 20px;
@@ -51,8 +55,8 @@
        }
        
        .home {
-        text-align: justify;
-           font-size: 26px;
+           text-align: center;
+           font-size: 2em;
            margin: 10%;
            height: 700px;
        }
@@ -62,7 +66,7 @@
             margin-top: 200px;
            justify-content: center;
            align-items: center;
-           text-align: left;
+           text-align: justify;
              
        }
        
@@ -87,15 +91,7 @@
            box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
            background-color: transparent;
        }
-       
-       .botaobody {
-           margin: 5px;
-       }
-       
-       .bt a {
-           text-decoration: 0;
-       }
-       
+          
        .bt {
            text-align: center;
            margin-top: 80px;
@@ -109,7 +105,7 @@
        }
        
        .botaoheader  {
-           font-size: 15px;
+           font-size: 1em;
            margin-left: 5px;
            border: double .5px transparent;
            background-color: white;
@@ -124,7 +120,8 @@
        }    
    
        .botaobody {
-           font-size: 20px;
+           margin: 5px;
+           font-size: .7em;
            margin-left: 5px;
            border: double .5px transparent;
            background-color: white;
@@ -171,49 +168,48 @@
        }
        
        .about {
+           
            margin: 0;
            justify-content: center;
            display: flex;
            flex-direction: column;
            height: 500px;
            margin-bottom: 100px;
-           padding: 50px;
+           padding: 15px;
            padding-bottom: 300px;
+       }
+
+       .about-box {
+        
+        display: block;
+        padding: 5px;
+        justify-content: center;
+        text-align: center;
        }
        
        #profile {
            
            margin-bottom: 20px;
-           max-width: 80%;
+           max-width: 100%;
            height: auto;
            border-radius: 5px;
            box-shadow: 5px 5px 10px rgba(0,0,0,50%);
            border: double .5px;
-           transition: .3s;
-       }
-       
-       #profile:hover {
-           transform: scale(102%);
-       }
-       
-       .contactbt {
-           display: flex;
-           justify-content: center;
+           
        }
        
       
-       
+       .contactbt {
+        margin-top: 50px;
+           font-size: xx-large;
+           display: flex;
+           justify-content: center;
+       }
+             
        #iconskill {
            font-size: 50px;
        }
        
-       .about-box {
-            display: block;
-            padding: 20px;
-            justify-content: center;text-align: center;
-
-       }
-
 
        .about-text {
            justify-content: center;
@@ -227,13 +223,109 @@
        }
        
 
-        .skills {
-            height: 900px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+       .skills {
+        height: 800px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+        
+    }
 
-        }
+    .proficiencias {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .backend-bar, .frontend-bar, .design-bar {        
+        width: 900px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        margin-top: 8px;
+    }
+
+    .frontend-progress {
+        width: 75%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+    .design-progress {
+        width: 60%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+
+
+    .backend-progress {
+        width: 95%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgb(110, 110, 110); 
+    }
+
+    .frontend, .backend, .design {
+        margin-top: 15px;
+    }
+    
+    .icons-table {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .icons-table i {
+        font-size: 100px;
+        margin: .3em;   
+        transition: .3s; 
+        cursor: pointer;
+    }
+
+    .icons-table i:hover {
+        color: rgb(110, 110, 110);
+        transform: scale(110%);        
+    }
+
+    .tabela-tecnologias {
+        width: 100%;
+    }
+
+    .tecnologias {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-tecnologias {
+        position: relative;
+        justify-content: center;
+        height: 10em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto-tecnologias {
+        
+        position: absolute;
+        align-items: center;
+    }
+
+
     }

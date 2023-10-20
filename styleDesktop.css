@@ -1,10 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
-@media (min-width: 769px) /*DESKTOP*/{
+@media (min-width: 400px) /*DESKTOP*/{
    
     /*ESTILOS GERAIS PARA A PAGINA*/
 
-   
+    #returnHomeBt {
+        margin: 5px;
+        font-size: 20px;
+        margin-left: 5px;
+        border: double .5px transparent;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        transition: .3s;
+        letter-spacing: 1px;
+        padding: 3px;
+        background-color: transparent;
+        border-radius: 5px;
+        text-decoration: none;  
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    #returnHomeBt:hover {
+       
+        transform: translate(-5px,-5px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
+        
+        color: aqua;
+    }
     
     html {
         scroll-behavior: smooth;
@@ -55,13 +81,30 @@
         border: double .5px transparent;
         background-color: white;
         cursor: pointer;
-        transition: .3s;
+        transition: .5s;
         letter-spacing: 1px;
         padding: 3px;
         background-color: transparent;
-        border-radius: 5px;
-        text-decoration: none;
+        border-radius: 5px;  
+       
+    }
 
+    .botaoheader:hover {
+        text-decoration-line: underline;
+        text-decoration-color: rgb(0, 0, 0);
+        text-underline-offset:  1em;
+        transform: translate(-5px,-5px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
+        color:aqua;       
+    }
+
+    .sectionActive {
+        text-decoration-line: underline;
+        text-decoration-color: rgb(0, 0, 0);
+        text-underline-offset:  1em;
+        transform: translate(-5px,-5px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
+        color: aqua;
     }
 
     /*ESTILOS PARA SESSÃO PRINCIPAL*/
@@ -88,11 +131,7 @@
         justify-content: space-around;
         align-items: center;
         text-align: left;
-        font-size: 30px;
-        
-        
-        
-          
+        font-size: 30px;         
     }
     
     #name {
@@ -146,10 +185,12 @@
         text-decoration: none;
     }
     
-    .botaobody:hover, .botaoheader:hover{
-        transform: translate(-1px,-1px);
+    
+    .botaobody:hover {
+        transform: translate(-5px,-5px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
-        border: double .5px;
+        
+        color: aqua;
     }
     
     .botaobody:active, .botaoheader:active {
@@ -186,7 +227,7 @@
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 600p;       
+        height: 400px;       
         padding: 50px;       
     }
     
@@ -214,17 +255,16 @@
     }
 
     #text-about {
-        margin-bottom: 140px ;
+        margin-bottom: 0 ;
     }
 
     .skills {
-        height: 800px;
+        height: 700px;
         display: grid;
         place-items: center;
         text-align: center;
         text-align: center;
-        justify-content: center;
-        
+        justify-content: center;        
     }
 
     .proficiencias {
