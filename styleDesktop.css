@@ -5,14 +5,15 @@
     /*ESTILOS GERAIS PARA A PAGINA*/
 
     #returnHomeBt {
+        display: block;
         margin: 5px;
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 5px;
         border: double .5px transparent;
         background-color: white;
         color: rgb(0, 0, 0);
         cursor: pointer;
-        transition: .3s;
+        transition:.3s;
         letter-spacing: 1px;
         padding: 3px;
         background-color: transparent;
@@ -22,7 +23,28 @@
         bottom: 15px;
         right: 20px;
         cursor: pointer;
+        animation: bounce 2s ease infinite;
     }
+
+    @keyframes bounce {
+        0% {
+          color:black;  
+          transform: translateY(0);
+          opacity: 1;
+        }
+        35% {
+            color: aqua;
+          transform: translateY(-5px); /* Mova para cima 10 pixels */
+          opacity: 0.5; /* Opacidade de 0.5 (fade) */
+        }
+        70% {
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px); /* Mova para cima 10 pixels */
+            opacity: 0.5; /* Opacidade de 0.5 (fade) */
+          }
+        }
+      }
+      
 
     #returnHomeBt:hover {
        
@@ -91,20 +113,20 @@
 
     .botaoheader:hover {
         text-decoration-line: underline;
-        text-decoration-color: rgb(0, 0, 0);
+        text-decoration-color: aqua;
         text-underline-offset:  1em;
         transform: translate(-5px,-5px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
-        color:aqua;       
+        color:rgb(0, 0, 0);       
     }
 
     .sectionActive {
         text-decoration-line: underline;
-        text-decoration-color: rgb(0, 0, 0);
+        text-decoration-color: aqua;
         text-underline-offset:  1em;
         transform: translate(-5px,-5px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
-        color: aqua;
+        color: rgb(0, 0, 0);
     }
 
     /*ESTILOS PARA SESSÃO PRINCIPAL*/
@@ -188,9 +210,9 @@
     
     .botaobody:hover {
         transform: translate(-5px,-5px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+        box-shadow: 5px 5px 10px rgba(aqua, 50%);
         
-        color: aqua;
+        color: rgb(0, 0, 0);
     }
     
     .botaobody:active, .botaoheader:active {

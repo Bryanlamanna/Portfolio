@@ -11,6 +11,9 @@ function fadeTheme() {
     if (theme == 1){
     body.classList.add('darkmode');
     header.classList.add('darkmodehd');
+
+    var returnBt = document.getElementById('returnHomeBt');
+    returnBt.style.color = 'white';
     
     for (var i = 0 ; i < botoesbd.length ; i++) {
         botoesbd[i].style.color = 'white';
@@ -25,6 +28,10 @@ function fadeTheme() {
 
     body.classList.remove('darkmode');
     header.classList.remove('darkmodehd');
+
+    var returnBt = document.getElementById('returnHomeBt');
+    returnBt.style.color = 'black';
+    
         
     for (var i = 0 ; i < botoesbd.length ; i++) {
         botoesbd[i].style.color = 'black';
@@ -64,21 +71,29 @@ function animeScroll() {
     })
 }
 
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-  
+function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.bottom <= windowHeight
     );
   }
+
+  function returnHome() {
+    var element = document.querySelector('.info');
+    var returnBtn = document.querySelector('#returnHomeBt');
+
+   
+}
+
   
 function sectionActive() {
     
     var ancHome = document.querySelector('.info');
-    var ancAbout = document.querySelector('#profile');
+    var ancAbout = document.querySelector('#text-about');
     var ancSkill = document.querySelector('.tabela-tecnologias');
 
     var section = [ancHome, ancAbout, ancSkill];
@@ -93,17 +108,7 @@ function sectionActive() {
         }
     }
 }
-/*
-function returnHome() {
-    var element = document.querySelector('#profile');
-    var returnBtn = document.querySelector('#returnHomeBt');
 
-    if (isElementInViewport(element)){
-        returnBtn.style.display = 'block';
-    } else {
-        returnBtn.style.display = 'none';
-    }
-}*/
 
 window.addEventListener('scroll', function(){
     animeScroll();
