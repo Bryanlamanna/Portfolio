@@ -9,46 +9,46 @@
         margin: 5px;
         font-size: 30px;
         margin-left: 5px;
-        border: double .5px transparent;
-        background-color: white;
+       
+        background-color: transparent;
         color: rgb(0, 0, 0);
         cursor: pointer;
         transition:.3s;
         letter-spacing: 1px;
         padding: 3px;
-        background-color: transparent;
+        border: none;
         border-radius: 5px;
         text-decoration: none;  
         position: fixed;
         bottom: 15px;
         right: 20px;
         cursor: pointer;
-        animation: bounce 2s ease infinite;
+        
     }
 
     @keyframes bounce {
         0% {
-          color:black;  
           transform: translateY(0);
-          opacity: 1;
+          color: aqua;
         }
-        35% {
-            color: aqua;
-          transform: translateY(-5px); /* Mova para cima 10 pixels */
-          opacity: 0.5; /* Opacidade de 0.5 (fade) */
-        }
+        10%{
+            color: unset;
+        }      
         70% {
-            color: rgb(255, 255, 255);
-            transform: translateY(-10px); /* Mova para cima 10 pixels */
-            opacity: 0.5; /* Opacidade de 0.5 (fade) */
+            transform: translateY(-20px); /* Mova para cima 10 pixels */
+             /* Opacidade de 0.5 (fade) */
           }
+          97% {
+            color: auto;
+          }
+        
         }
-      }
+      
       
 
     #returnHomeBt:hover {
        
-        transform: translate(-5px,-5px);
+        
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
         
         color: aqua;
@@ -101,7 +101,7 @@
         font-size: 20px;
         margin-left: 5px;
         border: double .5px transparent;
-        background-color: white;
+        
         cursor: pointer;
         transition: .5s;
         letter-spacing: 1px;
@@ -197,7 +197,7 @@
         font-size: 20px;
         margin-left: 5px;
         border: double .5px transparent;
-        background-color: white;
+        
         cursor: pointer;
         transition: .3s;
         letter-spacing: 1px;
@@ -246,15 +246,16 @@
     }
     
     .about {
+        
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 400px;       
+        height: 800px;       
         padding: 50px;       
     }
     
    .about-box {
-    margin-top: 10em;
+    margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +282,9 @@
     }
 
     .skills {
-        height: 700px;
+        
+        width: 100%;
+        height: 900px;
         display: grid;
         place-items: center;
         text-align: center;
@@ -289,53 +292,9 @@
         justify-content: center;        
     }
 
-    .proficiencias {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .backend-bar, .frontend-bar, .design-bar {        
-        width: 900px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: aliceblue;
-        margin-top: 8px;
-    }
-
-    .frontend-progress {
-        width: 75%;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(110, 110, 110); 
-    }
-
-    .design-progress {
-        width: 60%;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(110, 110, 110); 
-    }
-
-
-
-    .backend-progress {
-        width: 95%;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(110, 110, 110); 
-    }
-
-    .frontend, .backend, .design {
-        margin-top: 15px;
-    }
-    
+   
     .icons-table {
+        
         font-size: 13px;
         display: flex;
         align-items: center;
@@ -344,6 +303,8 @@
     }
 
     .icons-table i {
+        font-feature-settings: "isol"; 
+
         font-size: 70px;
         margin: 10px;   
         transition: .3s; 
@@ -351,7 +312,7 @@
     }
 
     .icons-table i:hover {
-        color: rgb(110, 110, 110);
+        color: aqua;
         transform: scale(110%);        
     }
 
@@ -383,6 +344,136 @@
         align-items: center;
     }
 
+    .projects {
+            
+            width: 100%;
+            height: 900px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            text-align: center;
+            justify-content: center;            
+    }
 
+    .slider {
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 500px;
+        height: 300px;
+    }
+
+    .slides {
+        border-radius: 10px;
+        width: 400%;
+        height: 300px;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        border-radius: 10px;
+        width: 25%;
+        position: relative;
+        transition: 1s;
+    }   
+
+    .slide img {
+        
+        width: 500px;
+    }
+
+    .manual-navigation {
+        position: absolute;
+        width: 500px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid aqua;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:hover {
+        background-color: white;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -50%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -75%;
+    }
+
+    .navigation-auto div {
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        width: 500px;
+        margin-top: 260px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto {
+        margin-right: 10px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: white;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: white;
+    }
+
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: white;
+    }
+
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color: white;
+    }
+
+
+
+    .contact {
+        background-color: coral;
+        width: 100%;
+        height: 900px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        text-align: center;
+        justify-content: center; 
+    }
 }
 
