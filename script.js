@@ -14,6 +14,7 @@ function fadeTheme() {
 
     var returnBt = document.getElementById('returnHomeBt');
     returnBt.style.color = 'white';
+ 
     
     for (var i = 0 ; i < botoesbd.length ; i++) {
         botoesbd[i].style.color = 'white';
@@ -117,30 +118,24 @@ window.addEventListener('scroll', function(){
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-   /*/ 
-    var theme = 1;
-    var body = document.body;
-    var botoeshd = document.querySelectorAll('.botaoheader');
-    var botoesbd = document.querySelectorAll('.botaobody');
-    var header = document.querySelector('.header');
-
-    header.classList.add('darkmodehd');
-    body.classList.add('darkmode');
+    const botoesSkill = document.querySelectorAll('.animeskill');
+    const images = document.querySelector('#iconcode');
     
-    for (var i = 0 ; i < botoesbd.length ; i++) {
-        botoesbd[i].style.color = 'white';
+    images.style.animation = 'bounce 4s ease infinite';
+    
+    function applyAnimation(element, delay) {
+      setTimeout(() => {
+        element.style.animation = 'bounce 4s ease infinite';
+      }, delay);
     }
-
-    for (var i = 0 ; i < botoeshd.length ; i++) {
-        botoeshd[i].style.color = 'white';
+    
+    for (let i = 0; i < botoesSkill.length; i++) {
+      const delay = i * 600; // Aumentei o atraso para 600ms (0.6 segundos) para criar um efeito de um após o outro
+      applyAnimation(botoesSkill[i], delay);
     }
-*/
     const homeItems = document.querySelectorAll('[data-animeHome]');
     homeItems.forEach(item => {
         item.classList.add('animate');
-    });
-
-    
-
+    });    
 })
 
