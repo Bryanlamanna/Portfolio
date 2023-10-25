@@ -121,7 +121,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const botoesSkill = document.querySelectorAll('.animeskill');
     const images = document.querySelector('#iconcode');
     
-    images.style.animation = 'bounce 4s ease infinite';
+    
     
     function applyAnimation(element, delay) {
       setTimeout(() => {
@@ -130,7 +130,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     
     for (let i = 0; i < botoesSkill.length; i++) {
-      const delay = i * 600; // Aumentei o atraso para 600ms (0.6 segundos) para criar um efeito de um após o outro
+      const delay = i * 100; // Aumentei o atraso para 600ms (0.6 segundos) para criar um efeito de um após o outro
       applyAnimation(botoesSkill[i], delay);
     }
     const homeItems = document.querySelectorAll('[data-animeHome]');

@@ -34,7 +34,7 @@
         10%{
             color: unset;
         }      
-        70% {
+        80% {
             transform: translateY(-20px); /* Mova para cima 10 pixels */
              /* Opacidade de 0.5 (fade) */
           }
@@ -134,12 +134,10 @@
     #iconcode {
        width: 400px;
        transition: .3s;
+       animation: bounce 4s ease infinite;
     }
+     
     
-    #iconcode:hover {
-        transform: scale(105%);
-     }
-   
     .home {
         display: flex;
         justify-content: space-around;   
@@ -250,7 +248,7 @@
         margin: 0;
         justify-content: left;
         display: flex;
-        height: 800px;       
+        height: 500px;       
         padding: 50px;       
     }
     
@@ -282,14 +280,11 @@
     }
 
     .skills {
-        
         width: 100%;
-        height: 900px;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        text-align: center;
-        justify-content: center;        
+        height: 600px;
+        display: flex;
+        align-items: center;          
+        justify-content: space-around;        
     }
 
    
@@ -323,7 +318,7 @@
     .tecnologias {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         height: 500px;
         justify-content: center;
         text-align: center;
@@ -345,10 +340,10 @@
     }
 
     .projects {
-            
+            gap: 30px;
             width: 100%;
             height: 900px;
-            display: grid;
+            display: flex;
             place-items: center;
             text-align: center;
             text-align: center;
@@ -361,6 +356,7 @@
         overflow: hidden;
         width: 500px;
         height: 300px;
+        box-shadow: 5px 5px 10px rgba(36, 35, 43, 0.5);
     }
 
     .slides {
@@ -384,6 +380,7 @@
     .slide img {
         
         width: 500px;
+        height: 100%;
     }
 
     .manual-navigation {
@@ -395,7 +392,7 @@
     }
 
     .manual-btn {
-        border: 2px solid aqua;
+        border: 2px solid white;
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -424,7 +421,7 @@
     }
 
     .navigation-auto div {
-        border: 2px solid red;
+        border: 2px solid transparent;
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -448,19 +445,19 @@
     }
 
     #radio1:checked ~ .navigation-auto .auto-btn1{
-        background-color: white;
+        background-color: aqua;
     }
 
     #radio2:checked ~ .navigation-auto .auto-btn2{
-        background-color: white;
+        background-color: aqua;
     }
 
     #radio3:checked ~ .navigation-auto .auto-btn3{
-        background-color: white;
+        background-color: aqua;
     }
 
     #radio4:checked ~ .navigation-auto .auto-btn4{
-        background-color: white;
+        background-color: aqua;
     }
 
 
