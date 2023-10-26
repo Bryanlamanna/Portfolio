@@ -51,7 +51,7 @@
         
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
         
-        color: aqua;
+        color: #119fc4;
     }
     
     html {
@@ -66,6 +66,7 @@
     }
 
     body {
+        background-color: rgb(217, 224, 231);
         height: 100vh;
         width: 100%;
         color: black;
@@ -79,7 +80,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(217, 224, 231, 0.5);
         z-index: 100; 
 
     }
@@ -87,7 +88,8 @@
     .header-box {
             
             gap: 10px;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 16px;
             text-align: right;
             display: flex;
             flex-direction: row;
@@ -113,19 +115,19 @@
 
     .botaoheader:hover {
         text-decoration-line: underline;
-        text-decoration-color: aqua;
-        text-underline-offset:  1em;
+        text-decoration-color: #119fc4;
+        text-underline-offset:  1.6em;
         transform: translate(-5px,-5px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
+        
         color:rgb(0, 0, 0);       
     }
 
     .sectionActive {
         text-decoration-line: underline;
-        text-decoration-color: aqua;
-        text-underline-offset:  1em;
+        text-decoration-color: #e3cb33;
+        text-underline-offset:  1.6em;
         transform: translate(-5px,-5px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
+       
         color: rgb(0, 0, 0);
     }
 
@@ -155,7 +157,7 @@
     }
     
     #name {
-        color: aqua;
+        color: #119fc4;
         cursor: pointer;
         transition: .4s;
         border: none;
@@ -169,7 +171,7 @@
     #name:hover {
         outline: none;
         border: none;
-        color: aqua;
+        color: #119fc4;
         cursor: pointer;
         transform: translate(-1px,-1px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
@@ -208,7 +210,7 @@
     
     .botaobody:hover {
         transform: translate(-5px,-5px);
-        box-shadow: 5px 5px 10px rgba(aqua, 50%);
+        box-shadow: 5px 5px 10px rgba(#119fc4, 50%);
         
         color: rgb(0, 0, 0);
     }
@@ -265,7 +267,7 @@
         width: auto;
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0,0,0,50%);
-        border: double .5px;
+        
         
     }
   
@@ -307,7 +309,7 @@
     }
 
     .icons-table i:hover {
-        color: aqua;
+        color: #119fc4;
         transform: scale(110%);        
     }
 
@@ -445,19 +447,19 @@
     }
 
     #radio1:checked ~ .navigation-auto .auto-btn1{
-        background-color: aqua;
+        background-color: #119fc4;
     }
 
     #radio2:checked ~ .navigation-auto .auto-btn2{
-        background-color: aqua;
+        background-color: #119fc4;
     }
 
     #radio3:checked ~ .navigation-auto .auto-btn3{
-        background-color: aqua;
+        background-color: #119fc4;
     }
 
     #radio4:checked ~ .navigation-auto .auto-btn4{
-        background-color: aqua;
+        background-color: #119fc4;
     }
 
 
