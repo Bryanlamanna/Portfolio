@@ -4,6 +4,13 @@
    
     /*ESTILOS GERAIS PARA A PAGINA*/
 
+    .track {        
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        color: #e3cb33;
+    }
+
     #returnHomeBt {
         display: block;
         margin: 5px;
