@@ -15,31 +15,30 @@
         <source src="assets/hotline-miami-soundtrack-daisuke.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+    <section class="header">
+        <nav class="header-box">
+                <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </button>
+                <a href="#inicio" target="_self" rel="noopener noreferrer">
+                    <button id="botao" class="botaoheader">Home</button>
+                </a>
+                <a href="#about" target="_self" rel="noopener noreferrer">
+                    <button id="botao" class="botaoheader">Sobre Mim</button>
+                </a>
+                <a href="#skills" target="_self" rel="noopener noreferrer">
+                    <button id="botao" class="botaoheader">Skills</button>
+                </a>
+                <a href="#projects" target="_self" rel="noopener noreferrer">
+                    <button id="botao" class="botaoheader">Projetos</button>
+                </a>
+                <a href="#contact" target="_self" rel="noopener noreferrer">
+                    <button id="botao" class="botaoheader">Contato</button>
+                </a>
+                
+            </nav   > 
+    </section>
     <main>
-        <section class="header">
-            <div class="header-box">
-                    <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
-                        <i class="fa-solid fa-circle-half-stroke"></i>
-                    </button>
-                    <a href="#inicio" target="_self" rel="noopener noreferrer">
-                        <button id="botao" class="botaoheader">Home</button>
-                    </a>
-                    <a href="#about" target="_self" rel="noopener noreferrer">
-                        <button id="botao" class="botaoheader">Sobre Mim</button>
-                    </a>
-                    <a href="#skills" target="_self" rel="noopener noreferrer">
-                        <button id="botao" class="botaoheader">Skills</button>
-                    </a>
-                    <a href="#projects" target="_self" rel="noopener noreferrer">
-                        <button id="botao" class="botaoheader">Projetos</button>
-                    </a>
-                    <a href="#contact" target="_self" rel="noopener noreferrer">
-                        <button id="botao" class="botaoheader">Contato</button>
-                    </a>
-                    
-            </div> 
-        </section>
-
         <section class="home" id="inicio">
             <div class="home-box">
                     <div class="info" data-animeHome="left">
@@ -71,9 +70,10 @@
                 <img id="profile" src="assets/profile.png" data-anime="left">
             
                 <div class="about-text" data-anime="bottom">
-                    <h1 style="color: #119fc4; font-size: 30px;">Bryan Lamanna</h1>
-                    <h2 style="font-size: 15px; margin-bottom: 20px;">Porto Alegre, RS</h2>
-                    <p id="text-about" style="font-size: 20px;">"Sou [Seu Nome], um [Sua Profissão ou Área de Atuação] apaixonado por [Sua Paixão ou Interesse Principal]. 
+                    <h1>Bryan Lamanna</h1>
+                    <h2 id="idadeAtual"></h2>
+                    
+                    <p id="text-about">"Sou [Seu Nome], um [Sua Profissão ou Área de Atuação] apaixonado por [Sua Paixão ou Interesse Principal]. 
                         Com [X] anos de experiência, meu compromisso é unir criatividade e funcionalidade para criar soluções únicas e inspiradoras. 
                         Minha jornada é impulsionada pela busca constante da excelência, onde cada projeto é uma oportunidade de inovação e aprendizado. 
                         Estou ansioso para compartilhar minha visão e colaborar com você para alcançar seus objetivos criativos."</p>
@@ -96,12 +96,12 @@
         </section>
 
         <section class="skills" id="skills">
-            <div style="margin-top: 150px;" class="imagem" data-animeHome="right">
-                <img style="width: 400px;" src="assets/nano2.png" id="iconcode" alt="origami bear" title="imagem gerada utilizando o modelo Dall-E (openIA)">
+            <div class="imagem" data-animeHome="right">
+                <img src="assets/nano2.png" id="iconcode" alt="origami bear" title="imagem gerada utilizando o modelo Dall-E (openIA)">
             </div>           
             <div class="tecnologias" data-anime="bottom">                
                 <div class="tabela-tecnologias">
-                    <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 40px;">
+                    <h1>
                         Tecnologias:
                     </h1>
                     <table class="icons-table">
@@ -141,58 +141,58 @@
                 </div>
                 <div class="info-tecnologias">    
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                            <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                            <h1>
                                 Java
                             </h1>
-                        <p id="text-about" style="font-size: 20px;">
+                        <p id="text-about">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore non voluptatibus fugiat commodi voluptas eveniet sit ab quibusdam rerum reprehenderit nesciunt ex fugit placeat laudantium eos fuga, accusamus natus consequatur?
                         </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                            <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                            <h1>
                                 JavaScript
                             </h1>
-                        <p id="text-about" style="font-size: 20px;">
+                        <p id="text-about">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, at ad! Veritatis, assumenda ipsam quod earum dignissimos at quidem quis corporis? Inventore enim vitae nihil nobis pariatur, quaerat non obcaecati!
                         </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                        <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                        <h1>
                             MySql / MongoDB
                         </h1>
-                    <p id="text-about" style="font-size: 20px;">
+                    <p id="text-about">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est commodi velit iste tempore non repellendus in? Officiis consequuntur aut numquam dolor iusto ratione, placeat impedit magni fuga sequi libero.
                     </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                        <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                        <h1>
                             CSS 3
                         </h1>
-                    <p id="text-about" style="font-size: 20px;">
+                    <p id="text-about" >
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corrupti quam voluptatem perspiciatis delectus soluta odit sint quae dolorum, nostrum debitis sed architecto aspernatur nulla modi. Nam aspernatur quam quos?
                     </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                        <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                        <h1>
                             HTML 5
                         </h1>
-                    <p id="text-about" style="font-size: 20px;">
+                    <p id="text-about" >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, enim culpa assumenda aliquid expedita fugit deserunt libero, aperiam perferendis totam nam? Facere aut laborum voluptas repellat error nobis perferendis hic.
                     </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                        <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                        <h1>
                             Figma
                         </h1>
-                    <p id="text-about" style="font-size: 20px;">
+                    <p id="text-about" >
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sint eligendi laboriosam eius, officiis excepturi debitis nam modi, corrupti vero consectetur, repellendus alias quae! Asperiores amet temporibus similique beatae quos.
                     </p>
                     </div>
                     <div class="texto-tecnologias" data-animeSkill="bottom">
-                        <h1 style="color: #119fc4; font-size: 30px; margin-top: 15px; margin-bottom: 15px;">
+                        <h1>
                             Git / GitHub
                         </h1>
-                    <p id="text-about" style="font-size: 20px;">
+                    <p id="text-about">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quia provident temporibus aliquam itaque odit similique voluptas possimus fugit? Recusandae deserunt quod delectus quo quas adipisci consequuntur laudantium odit voluptate?
                     </p>
                     </div>
@@ -257,13 +257,15 @@
                     </button>
                 </a>
             </div>
+           
         </section>
 
         <section class="contact" id="contact">
         </section>
                  
     </main>
-    <a  href="#inicio" target="_self" rel="noopener noreferrer">
+
+    <a href="#inicio" target="_self" rel="noopener noreferrer">
         <button id="returnHomeBt">
             <i class="fa-solid fa-angles-up"></i>
         </button>
@@ -274,6 +276,7 @@
     <button id="play-bt" style="display: none;" class="audio-bt">
         <i class="fa-solid fa-volume-high"></i>
     </button>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ const botaoPlay = document.getElementById('play-bt');
 const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
 
+
 botaoPlay.addEventListener("click", function() {
     soundTrack.pause();
     botaoPlay.style.display = "none";
@@ -118,8 +119,9 @@ function sectionActive() {
     var ancHome = document.querySelector('.info');
     var ancAbout = document.querySelector('#text-about');
     var ancSkill = document.querySelector('.tabela-tecnologias');
+    var ancProject = document.querySelector('.projeto');
 
-    var section = [ancHome, ancAbout, ancSkill];
+    var section = [ancHome, ancAbout, ancSkill, ancProject];
 
     var headerSub = document.querySelectorAll('.botaoheader');
 
@@ -140,7 +142,9 @@ window.addEventListener('scroll', function(){
 window.addEventListener('DOMContentLoaded', function() {
     const botoesSkill = document.querySelectorAll('.animeskill');
     const images = document.querySelector('#iconcode');
-        
+    
+    
+
     function applyAnimation(element, delay) {
       setTimeout(() => {
         element.style.animation = 'bounce 4s ease infinite';
