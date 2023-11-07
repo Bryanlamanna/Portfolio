@@ -1,5 +1,20 @@
 var theme = 1;
-const targetItems = document.querySelectorAll('[data-anime]')
+const targetItems = document.querySelectorAll('[data-anime]');
+const botaoPlay = document.getElementById('play-bt');
+const botaoPause = document.getElementById('pause-bt');
+const soundTrack = document.getElementById('track');
+
+botaoPlay.addEventListener("click", function() {
+    soundTrack.pause();
+    botaoPlay.style.display = "none";
+    botaoPause.style.display = "block";
+})
+
+botaoPause.addEventListener("click", function() {
+    soundTrack.play();
+    botaoPause.style.display = "none";
+    botaoPlay.style.display = "block";
+})
 
 function fadeTheme() {
     
@@ -7,6 +22,7 @@ function fadeTheme() {
     var botoeshd = document.querySelectorAll('.botaoheader');
     var botoesbd = document.querySelectorAll('.botaobody');
     var header = document.querySelector('.header');
+    var botoesaudio = document.querySelectorAll('.audio-bt');
 
 
     if (theme == 1){
@@ -16,6 +32,9 @@ function fadeTheme() {
     var returnBt = document.getElementById('returnHomeBt');
     returnBt.style.color = 'white';
  
+    botoesaudio.forEach(function(botao) {
+        botao.style.color = "white";
+    })
     
     for (var i = 0 ; i < botoesbd.length ; i++) {
         botoesbd[i].style.color = 'white';
@@ -27,6 +46,10 @@ function fadeTheme() {
     theme=2;
     return;
     }
+
+    botoesaudio.forEach(function(botao) {
+        botao.style.color = "black";
+    })
 
     body.classList.remove('darkmode');
     header.classList.remove('darkmodehd');
@@ -60,7 +83,6 @@ function showSkill(index) {
     
     txtSkill[index].classList.add('animate');
 }
-
 
 function animeScroll() {
     const windowTop = window.pageYOffset+600;
@@ -112,8 +134,7 @@ function sectionActive() {
 
 window.addEventListener('scroll', function(){
     animeScroll();
-    sectionActive();
-    
+    sectionActive(); 
 })
 
 window.addEventListener('DOMContentLoaded', function() {

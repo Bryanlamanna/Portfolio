@@ -11,7 +11,7 @@
     <title>Bryan Lamanna</title>
 </head>
 <body>
-    <audio class="track" controls loop autoplay>
+    <audio id="track" loop autoplay>
         <source src="assets/hotline-miami-soundtrack-daisuke.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
@@ -19,10 +19,7 @@
         <section class="header">
             <div class="header-box">
                     <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
-                        <i class="fa-regular fa-moon"></i>
-                    </button>
-                    <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
-                        <i class="fa-regular fa-moon"></i>
+                        <i class="fa-solid fa-circle-half-stroke"></i>
                     </button>
                     <a href="#inicio" target="_self" rel="noopener noreferrer">
                         <button id="botao" class="botaoheader">Home</button>
@@ -73,7 +70,7 @@
             <div class="about-box">
                 <img id="profile" src="assets/profile.png" data-anime="left">
             
-                <div class="about-text" data-anime="right">
+                <div class="about-text" data-anime="bottom">
                     <h1 style="color: #119fc4; font-size: 30px;">Bryan Lamanna</h1>
                     <h2 style="font-size: 15px; margin-bottom: 20px;">Porto Alegre, RS</h2>
                     <p id="text-about" style="font-size: 20px;">"Sou [Seu Nome], um [Sua Profissão ou Área de Atuação] apaixonado por [Sua Paixão ou Interesse Principal]. 
@@ -81,7 +78,7 @@
                         Minha jornada é impulsionada pela busca constante da excelência, onde cada projeto é uma oportunidade de inovação e aprendizado. 
                         Estou ansioso para compartilhar minha visão e colaborar com você para alcançar seus objetivos criativos."</p>
                         <div class="contactbt">
-                                <a href="CV de Bryan Lamanna.pdf" class="cv" download="CV de Bryan Lamanna.pdf">
+                                <a href="assets/CV de Bryan Lamanna.pdf" class="cv" download="CV de Bryan Lamanna.pdf">
                                 <button class="botaobody" id="botao">
                                     <i class="fa-regular fa-file-pdf"></i>
                                     Baixar CV
@@ -259,27 +256,24 @@
                         Site
                     </button>
                 </a>
-
-                
-
             </div>
-            
-            
-
         </section>
 
         <section class="contact" id="contact">
-
         </section>
-
-                   
+                 
     </main>
     <a  href="#inicio" target="_self" rel="noopener noreferrer">
         <button id="returnHomeBt">
             <i class="fa-solid fa-angles-up"></i>
-            
         </button>
     </a>  
+    <button id="pause-bt" class="audio-bt">
+        <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+    <button id="play-bt" style="display: none;" class="audio-bt">
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
     <script src="script.js"></script>
 </body>
 </html>

@@ -5,6 +5,52 @@
     /*ESTILOS GERAIS PARA A PAGINA*/
 
     
+  ::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0f85a3;
+    border-radius: 5px; 
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e3cb33;
+  }
+
+    .audio-bt {
+        margin: 5px;
+        font-size: 20px;
+        margin-left: 5px;
+        border: double .5px transparent;
+        cursor: pointer;
+        transition: .3s;
+        letter-spacing: 1px;
+        padding: 3px;
+        background-color: transparent;
+        border-radius: 5px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        opacity: .4;
+        transition: .5s;
+    }
+
+    .audio-bt:active {
+        transform: scale(90%);
+    }
+
+    
+    .audio-bt:hover {
+        opacity: 1;
+    }
 
     .track {        
         position: fixed;
@@ -90,7 +136,7 @@
     }
 
     .header-box {
-            
+            padding-right: 20px;
             gap: 10px;
             padding-top: 20px;
             padding-bottom: 16px;
@@ -121,7 +167,7 @@
         text-decoration-line: underline;
         text-decoration-color: #119fc4;
         text-underline-offset:  1.6em;
-        transform: translate(-5px,-5px);
+        transform: translate(-3px,-3px);
         
         color:rgb(0, 0, 0);       
     }
@@ -234,6 +280,11 @@
         position: absolute;
         left: 15px;
         cursor: pointer;
+        opacity: .4;
+    }
+
+    #darkmode-bt:hover {
+        opacity: 1;
     }
     
     .darkmode {
