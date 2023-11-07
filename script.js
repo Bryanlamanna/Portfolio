@@ -5,6 +5,7 @@ const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
 
 
+
 botaoPlay.addEventListener("click", function() {
     soundTrack.pause();
     botaoPlay.style.display = "none";
@@ -13,6 +14,7 @@ botaoPlay.addEventListener("click", function() {
 
 botaoPause.addEventListener("click", function() {
     soundTrack.play();
+    soundTrack.volume = ".2"
     botaoPause.style.display = "none";
     botaoPlay.style.display = "block";
 })
@@ -134,6 +136,36 @@ function sectionActive() {
     }
 }
 
+function calcularIdade() {
+    // Data de nascimento
+    const dataNascimento = new Date('1997-06-23');
+    
+    // Data atual
+    const dataAtual = new Date();
+    
+    // Calcula a diferença em milissegundos entre as duas datas
+    const diferencaMilissegundos = dataAtual - dataNascimento;
+    
+    // Converte a diferença de milissegundos para anos, meses e dias
+    const milissegundosPorAno = 1000 * 60 * 60 * 24 * 365.25; // Considerando anos bissextos
+    const anos = Math.floor(diferencaMilissegundos / milissegundosPorAno);
+    
+    // Calcula os meses restantes após subtrair os anos
+    const milissegundosRestantes = diferencaMilissegundos % milissegundosPorAno;
+    const milissegundosPorMes = milissegundosPorAno / 12;
+    const meses = Math.floor(milissegundosRestantes / milissegundosPorMes);
+    
+    // Calcula os dias restantes após subtrair os anos e meses
+    const milissegundosRestantesDias = milissegundosRestantes % milissegundosPorMes;
+    const dias = Math.floor(milissegundosRestantesDias / (1000 * 60 * 60 * 24));
+    
+    return {
+      anos,
+      meses,
+      dias
+    };
+  }
+
 window.addEventListener('scroll', function(){
     animeScroll();
     sectionActive(); 
@@ -142,8 +174,11 @@ window.addEventListener('scroll', function(){
 window.addEventListener('DOMContentLoaded', function() {
     const botoesSkill = document.querySelectorAll('.animeskill');
     const images = document.querySelector('#iconcode');
+    var idadeAtual = document.querySelector('#idadeAtual');
     
-    
+    const dataNascimento = new Date('1997-06-23');
+    const idade = calcularIdade(dataNascimento);
+    idadeAtual.innerHTML = `${idade.anos} anos, ${idade.meses} meses e ${idade.dias} dias*`;
 
     function applyAnimation(element, delay) {
       setTimeout(() => {
@@ -152,9 +187,10 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     
     for (let i = 0; i < botoesSkill.length; i++) {
-      const delay = i * 100; // Aumentei o atraso para 600ms (0.6 segundos) para criar um efeito de um após o outro
+      const delay = i * 100; 
       applyAnimation(botoesSkill[i], delay);
     }
+
     const homeItems = document.querySelectorAll('[data-animeHome]');
     homeItems.forEach(item => {
         item.classList.add('animate');
