@@ -1,4 +1,5 @@
 var theme = 1;
+const targetItems = document.querySelectorAll('[data-anime]')
 
 function fadeTheme() {
     
@@ -60,8 +61,6 @@ function showSkill(index) {
     txtSkill[index].classList.add('animate');
 }
 
-const targetItems = document.querySelectorAll('[data-anime]')
-
 
 function animeScroll() {
     const windowTop = window.pageYOffset+600;
@@ -83,16 +82,17 @@ function isElementInViewport(element) {
     );
   }
 
-  function returnHome() {
-    var element = document.querySelector('.info');
-    var returnBtn = document.querySelector('#returnHomeBt');
-
-   
-}
-
+  window.onscroll = function() {
+    var button = document.getElementById("returnHomeBt");
+    if (document.documentElement.scrollTop > 2600) {
+        
+        button.style.opacity = "1";
+    } else {
+        button.style.opacity = "0";
+    }
+};
   
-function sectionActive() {
-    
+function sectionActive() {  
     var ancHome = document.querySelector('.info');
     var ancAbout = document.querySelector('#text-about');
     var ancSkill = document.querySelector('.tabela-tecnologias');
@@ -110,19 +110,16 @@ function sectionActive() {
     }
 }
 
-
 window.addEventListener('scroll', function(){
     animeScroll();
     sectionActive();
-    returnHome();
+    
 })
 
 window.addEventListener('DOMContentLoaded', function() {
     const botoesSkill = document.querySelectorAll('.animeskill');
     const images = document.querySelector('#iconcode');
-    
-    
-    
+        
     function applyAnimation(element, delay) {
       setTimeout(() => {
         element.style.animation = 'bounce 4s ease infinite';

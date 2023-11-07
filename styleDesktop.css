@@ -4,33 +4,40 @@
    
     /*ESTILOS GERAIS PARA A PAGINA*/
 
+    
+
     .track {        
         position: fixed;
         bottom: 10px;
         left: 10px;
-        color: #e3cb33;
+        opacity: .1;
+        transition: .5s;
+    }
+
+    .track:hover{
+        opacity: .8;
     }
 
     #returnHomeBt {
-        display: block;
-        margin: 5px;
+        
+        transition: 4s;
+        background-color: transparent;
         font-size: 30px;
         margin-left: 5px;
-       
-        background-color: transparent;
-        color: rgb(0, 0, 0);
-        cursor: pointer;
-        transition:.3s;
-        letter-spacing: 1px;
-        padding: 3px;
+        opacity: 0;
+        display: block;
+        color: rgb(49, 49, 49);
         border: none;
-        border-radius: 5px;
-        text-decoration: none;  
+        transition:.3s;
         position: fixed;
         bottom: 15px;
         right: 20px;
         cursor: pointer;
-        
+    }
+
+    #returnHomeBt:hover {
+        color: #119fc4;
+        opacity: 1;
     }
 
     @keyframes bounce {
@@ -50,17 +57,7 @@
           }
         
         }
-      
-      
-
-    #returnHomeBt:hover {
        
-        
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 10%);
-        
-        color: #119fc4;
-    }
-    
     html {
         scroll-behavior: smooth;
     }
