@@ -3,8 +3,24 @@ const targetItems = document.querySelectorAll('[data-anime]');
 const botaoPlay = document.getElementById('play-bt');
 const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
+const printCod = document.querySelector('.printCodigo');
+const idadeAtual = document.getElementById('idadeAtual');
 
 
+
+idadeAtual.addEventListener('mouseenter', function() {
+    printCod.style.display = "block";
+    setTimeout(function() {
+        printCod.style.opacity = "1";
+    }, 100);     
+})
+
+idadeAtual.addEventListener('mouseleave', function() {
+    printCod.style.opacity = "0";
+    setTimeout(function() {
+        printCod.style.display = "none";
+    }, 500); 
+})
 
 botaoPlay.addEventListener("click", function() {
     soundTrack.pause();
@@ -14,7 +30,7 @@ botaoPlay.addEventListener("click", function() {
 
 botaoPause.addEventListener("click", function() {
     soundTrack.play();
-    soundTrack.volume = ".2"
+    soundTrack.volume = ".6"
     botaoPause.style.display = "none";
     botaoPlay.style.display = "block";
 })
@@ -136,6 +152,8 @@ function sectionActive() {
     }
 }
 
+//função executada ao carregar a página
+
 function calcularIdade() {
     // Data de nascimento
     const dataNascimento = new Date('1997-06-23');
@@ -178,7 +196,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     const dataNascimento = new Date('1997-06-23');
     const idade = calcularIdade(dataNascimento);
-    idadeAtual.innerHTML = `${idade.anos} anos, ${idade.meses} meses e ${idade.dias} dias*`;
+    idadeAtual.textContent = `${idade.anos} anos, ${idade.meses} meses e ${idade.dias} dias*`;
 
     function applyAnimation(element, delay) {
       setTimeout(() => {

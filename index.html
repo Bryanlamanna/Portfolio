@@ -71,8 +71,10 @@
             
                 <div class="about-text" data-anime="bottom">
                     <h1>Bryan Lamanna</h1>
-                    <h2 id="idadeAtual"></h2>
-                    
+                        
+                            <h2 id="idadeAtual" ></h2>
+                            <img class="printCodigo" src="assets/codigo-idade.png" alt="trecho de codigo que calcula minha idade ao carregar a página">
+                  
                     <p id="text-about">
                         "Sou [Seu Nome], um [Sua Profissão ou Área de Atuação] apaixonado por [Sua Paixão ou Interesse Principal]. 
                         Com [X] anos de experiência, meu compromisso é unir criatividade e funcionalidade para criar soluções únicas e inspiradoras. 
@@ -95,37 +97,7 @@
                             
                         </div>    
                 </div>
-                <span class="tooltiptext">
-                    function calcularIdade() {
-                        // Data de nascimento
-                        const dataNascimento = new Date('1997-06-23');
-                        
-                        // Data atual
-                        const dataAtual = new Date();
-                        
-                        // Calcula a diferença em milissegundos entre as duas datas
-                        const diferencaMilissegundos = dataAtual - dataNascimento;
-                        
-                        // Converte a diferença de milissegundos para anos, meses e dias
-                        const milissegundosPorAno = 1000 * 60 * 60 * 24 * 365.25; // Considerando anos bissextos
-                        const anos = Math.floor(diferencaMilissegundos / milissegundosPorAno);
-                        
-                        // Calcula os meses restantes após subtrair os anos
-                        const milissegundosRestantes = diferencaMilissegundos % milissegundosPorAno;
-                        const milissegundosPorMes = milissegundosPorAno / 12;
-                        const meses = Math.floor(milissegundosRestantes / milissegundosPorMes);
-                        
-                        // Calcula os dias restantes após subtrair os anos e meses
-                        const milissegundosRestantesDias = milissegundosRestantes % milissegundosPorMes;
-                        const dias = Math.floor(milissegundosRestantesDias / (1000 * 60 * 60 * 24));
-                        
-                        return {
-                          anos,
-                          meses,
-                          dias
-                        };
-                      }
-                </span>
+                
             </div>
         </section>
 
