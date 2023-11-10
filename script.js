@@ -6,13 +6,16 @@ const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
 
-
-
 idadeAtual.addEventListener('mouseenter', function() {
     printCod.style.display = "block";
     setTimeout(function() {
         printCod.style.opacity = "1";
-    }, 100);     
+    }, 100);    
+    
+    var idade = calcularIdade();
+
+    idadeAtual.textContent += ` ,  ${idade.meses} meses e ${idade.dias} dias.` 
+
 })
 
 idadeAtual.addEventListener('mouseleave', function() {
@@ -20,6 +23,10 @@ idadeAtual.addEventListener('mouseleave', function() {
     setTimeout(function() {
         printCod.style.display = "none";
     }, 500); 
+
+    var idade = calcularIdade();
+
+    idadeAtual.textContent = `${idade.anos} anos*`
 })
 
 botaoPlay.addEventListener("click", function() {
@@ -95,6 +102,13 @@ function copyEmail() {
 
 function showSkill(index) {
     var txtSkill = document.querySelectorAll('[data-animeSkill]');
+    var skillIcon = document.querySelectorAll('.animeskill');
+
+    skillIcon.forEach(icon => {
+        icon.classList.remove('selected-icon')   
+    })
+
+    skillIcon[index].classList.add('selected-icon');
 
     txtSkill.forEach(txt => {
         txt.classList.remove('animate');
@@ -125,7 +139,7 @@ function isElementInViewport(element) {
 
   window.onscroll = function() {
     var button = document.getElementById("returnHomeBt");
-    if (document.documentElement.scrollTop > 2600) {
+    if (document.documentElement.scrollTop > 3700) {
         
         button.style.opacity = "1";
     } else {
@@ -196,7 +210,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     const dataNascimento = new Date('1997-06-23');
     const idade = calcularIdade(dataNascimento);
-    idadeAtual.textContent = `${idade.anos} anos, ${idade.meses} meses e ${idade.dias} dias*`;
+    idadeAtual.textContent = `${idade.anos} anos*`;
 
     function applyAnimation(element, delay) {
       setTimeout(() => {

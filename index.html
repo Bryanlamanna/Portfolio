@@ -11,33 +11,33 @@
     <title>Bryan Lamanna</title>
 </head>
 <body>
-    <audio id="track" loop>
-        <source src="assets/hotline-miami-soundtrack-daisuke.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
-    <section class="header">
-        <nav class="header-box">
-                <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
-                    <i class="fa-solid fa-circle-half-stroke"></i>
-                </button>
-                <a href="#inicio" target="_self" rel="noopener noreferrer">
-                    <button id="botao" class="botaoheader">Home</button>
-                </a>
-                <a href="#about" target="_self" rel="noopener noreferrer">
-                    <button id="botao" class="botaoheader">Sobre Mim</button>
-                </a>
-                <a href="#skills" target="_self" rel="noopener noreferrer">
-                    <button id="botao" class="botaoheader">Skills</button>
-                </a>
-                <a href="#projects" target="_self" rel="noopener noreferrer">
-                    <button id="botao" class="botaoheader">Projetos</button>
-                </a>
-                <a href="#contact" target="_self" rel="noopener noreferrer">
-                    <button id="botao" class="botaoheader">Contato</button>
-                </a>
-                
-            </nav   > 
-    </section>
+        <audio id="track" loop>
+            <source src="assets/hotline-miami-soundtrack-daisuke.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <section class="header">
+            <nav class="header-box">
+                    <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
+                    <a href="#inicio" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Home</button>
+                    </a>
+                    <a href="#about" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Sobre Mim</button>
+                    </a>
+                    <a href="#skills" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Skills</button>
+                    </a>
+                    <a href="#projects" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Projetos</button>
+                    </a>
+                    <a href="#contact" target="_self" rel="noopener noreferrer">
+                        <button id="botao" class="botaoheader">Contato</button>
+                    </a>
+                    
+                </nav   > 
+        </section>
     <main>
         <section class="home" id="inicio">
             <div class="home-box">
@@ -210,13 +210,103 @@
         <section class="projects" id="projects">
 
             <div class="projeto">
+                    <div class="slider" data-anime="bottom">
+                        <div class="slides">
+
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+
+                            <div class="slide first">
+                                <img src="assets/boo (1).jpg" alt="">
+                            </div>
+                            
+                            <div class="slide">
+                                <img src="assets/boo (2).jpg" alt="">
+                            </div>
+
+                            <div class="slide">
+                                <img src="assets/boo (3).jpg" alt="">
+                            </div>
+
+                            <div class="slide">
+                                <img src="assets/boo (4).jpg" alt="">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>    
+
+                        </div>
+
+                        <div class="manual-navigation">    
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>                                             
+                    </div>           
+                    <div class="descricao-projeto-left" data-anime="bottom">
+                        <h1>nome do projeto</h1>
+                        <h2>tecnologias usadas</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
+                            Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
+                        </p>
+                        <div class="botoes-projeto">
+                            <a href="" data-anime="bottom">
+                                <button class="botaobody" id="botao">
+                                    <i class="fa-brands fa-square-github"></i>
+                                    Repositório
+                                </button>
+                            </a>
+                            <a href="" data-anime="bottom">
+                                <button class="botaobody" id="botao" >
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    Site
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+            </div>   
+
+            <div class="projeto">
+                
+                <div class="descricao-projeto-right" data-anime="bottom">
+                    <h1>nome do projeto</h1>
+                    <h2>tecnologias usadas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
+                        Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
+                    </p>
+                    <div class="botoes-projeto">
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao">
+                                <i class="fa-brands fa-square-github"></i>
+                                Repositório
+                            </button>
+                        </a>
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao" >
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Site
+                            </button>
+                        </a>
+                    </div>
+                </div>
                 <div class="slider" data-anime="bottom">
                     <div class="slides">
 
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <input type="radio" name="radio-btn" id="radio6">
+                        <input type="radio" name="radio-btn" id="radio7">
+                        <input type="radio" name="radio-btn" id="radio8">
 
                         <div class="slide first">
                             <img src="assets/boo (1).jpg" alt="">
@@ -235,35 +325,158 @@
                         </div>
 
                         <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
                         </div>    
 
                     </div>
 
                     <div class="manual-navigation">    
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </div>       
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                        <label for="radio8" class="manual-btn"></label>
+                    </div>                                             
+                </div>           
+                
+            </div>   
+
+            <div class="projeto">
+                <div class="slider" data-anime="bottom">
+                    <div class="slides">
+
+                        <input type="radio" name="radio-btn" id="radio9">
+                        <input type="radio" name="radio-btn" id="radio10">
+                        <input type="radio" name="radio-btn" id="radio11">
+                        <input type="radio" name="radio-btn" id="radio12">
+
+                        <div class="slide first">
+                            <img src="assets/boo (1).jpg" alt="">
+                        </div>
+                        
+                        <div class="slide">
+                            <img src="assets/boo (2).jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/boo (3).jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/boo (4).jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn9"></div>
+                            <div class="auto-btn10"></div>
+                            <div class="auto-btn11"></div>
+                            <div class="auto-btn12"></div>
+                        </div>    
+
+                    </div>
+
+                    <div class="manual-navigation">    
+                        <label for="radio9" class="manual-btn"></label>
+                        <label for="radio10" class="manual-btn"></label>
+                        <label for="radio11" class="manual-btn"></label>
+                        <label for="radio12" class="manual-btn"></label>
+                    </div>                                             
+                </div>           
+                <div class="descricao-projeto-left" data-anime="bottom">
+                    <h1>nome do projeto</h1>
+                    <h2>tecnologias usadas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
+                        Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
+                    </p>
+                    <div class="botoes-projeto">
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao">
+                                <i class="fa-brands fa-square-github"></i>
+                                Repositório
+                            </button>
+                        </a>
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao" >
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Site
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <a href="" data-anime="bottom">
-                    <button class="botaobody" id="botao">
-                        <i class="fa-brands fa-square-github"></i>
-                        Repositório
-                    </button>
-                </a>
-                <a href="" data-anime="bottom">
-                    <button class="botaobody" id="botao" >
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        Site
-                    </button>
-                </a>
-            </div>
-           
+            </div>   
+
+            <div class="projeto">
+                
+                <div class="descricao-projeto-right" data-anime="bottom">
+                    <h1>nome do projeto</h1>
+                    <h2>tecnologias usadas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
+                        Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
+                    </p>
+                    <div class="botoes-projeto">
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao">
+                                <i class="fa-brands fa-square-github"></i>
+                                Repositório
+                            </button>
+                        </a>
+                        <a href="" data-anime="bottom">
+                            <button class="botaobody" id="botao" >
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Site
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider" data-anime="bottom">
+                    <div class="slides">
+
+                        <input type="radio" name="radio-btn" id="radio13">
+                        <input type="radio" name="radio-btn" id="radio14">
+                        <input type="radio" name="radio-btn" id="radio15">
+                        <input type="radio" name="radio-btn" id="radio16">
+
+                        <div class="slide first">
+                            <img src="assets/boo (1).jpg" alt="">
+                        </div>
+                        
+                        <div class="slide">
+                            <img src="assets/boo (2).jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/boo (3).jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/boo (4).jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn13"></div>
+                            <div class="auto-btn14"></div>
+                            <div class="auto-btn15"></div>
+                            <div class="auto-btn16"></div>
+                        </div>    
+
+                    </div>
+
+                    <div class="manual-navigation">    
+                        <label for="radio13" class="manual-btn"></label>
+                        <label for="radio14" class="manual-btn"></label>
+                        <label for="radio15" class="manual-btn"></label>
+                        <label for="radio16" class="manual-btn"></label>
+                    </div>                                             
+                </div>           
+                
+            </div>  
+
         </section>
 
         <section class="contact" id="contact">
