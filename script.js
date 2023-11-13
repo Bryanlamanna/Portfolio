@@ -5,6 +5,23 @@ const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
+const contatoLinkedin = document.getElementById('contatoLinkedin');
+const contatoWhatsapp = document.getElementById('contatoWhatsapp');
+const contatoEmail = document.getElementById('contatoEmail');
+const contatoGithub = document.getElementById('contatoGithub');
+
+contatoLinkedin.addEventListener('mouseenter', function(){
+    const spanLinkedin = document.getElementById('spanLinkedin');
+
+    spanLinkedin.style.display = "block";
+})
+
+contatoLinkedin.addEventListener('mouseleave', function(){
+    const spanLinkedin = document.getElementById('spanLinkedin');
+
+    spanLinkedin.style.display = "none";
+})
+
 
 idadeAtual.addEventListener('mouseenter', function() {
     printCod.style.display = "block";
@@ -14,19 +31,34 @@ idadeAtual.addEventListener('mouseenter', function() {
     
     var idade = calcularIdade();
 
-    idadeAtual.textContent += ` ,  ${idade.meses} meses e ${idade.dias} dias.` 
-
+    idadeAtual.style.opacity = "0";
+    
+    
+    
+    setTimeout(function() {
+        idadeAtual.textContent += ` ,  ${idade.meses} meses e ${idade.dias} dias.` 
+        idadeAtual.style.opacity = "1";
+    }, 200);
 })
 
 idadeAtual.addEventListener('mouseleave', function() {
     printCod.style.opacity = "0";
     setTimeout(function() {
         printCod.style.display = "none";
-    }, 500); 
+    }, 200); 
 
     var idade = calcularIdade();
 
-    idadeAtual.textContent = `${idade.anos} anos*`
+    idadeAtual.style.opacity = "0";
+    
+    
+    
+    setTimeout(function() {
+        idadeAtual.textContent = `${idade.anos} anos*`
+        idadeAtual.style.opacity = "1";
+    }, 200);
+
+    
 })
 
 botaoPlay.addEventListener("click", function() {
