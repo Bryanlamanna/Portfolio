@@ -212,6 +212,10 @@
         height: 700px;   
     }
 
+    .botoes-home {
+        display: flex;
+    }
+
      .home-box {
         width: 100%;
         margin-top: 100px;
@@ -232,6 +236,7 @@
     
     #name-text {
         background-color: transparent;
+        font-size: 2.5rem;
     }
     
     #name:hover {
@@ -248,16 +253,7 @@
         text-decoration: 0;
     }
     
-    .bt {
-        position: absolute;
-        margin-top: 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-left: 11.5%;
-    }
-    
+   
     .botaobody {
         margin: 5px;
         font-size: 20px;
@@ -367,6 +363,10 @@
 
     #text-about {
         margin-bottom: 0 ;
+    }
+
+    .botoes-about {
+        display: flex;
     }
 
     .skills {
@@ -678,20 +678,83 @@
         animation: bounce 4s ease infinite;
     }
 
-    .contatos i {
+    .btn-40,
+    .btn-40 *,
+    .btn-40 :after,
+    .btn-40 :before,
+    .btn-40:after,
+    .btn-40:before {
+      border: 0 solid;
+      box-sizing: border-box;
+      border-radius: 5px;
+      
+    }
+    .btn-40 {
+      -webkit-tap-highlight-color: transparent;
+      
+      background-color: transparent;
+      background-image: none;
+      color: rgb(49, 49, 49);
+      cursor: pointer;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      
+     
+    }
+    .btn-40:disabled {
+      cursor: default;
+    }
+    
+    
+    .btn-40 [hidden] {
+      display: none;
+    }
+
+
+    .btn-40 {
         margin: 15px;
-        color: black;
-        font-size: 3em;
+      border: 2px solid;
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      padding: 1rem 5rem;
+      position: relative;
+      
+    }
+    .btn-40 .new,
+    .btn-40 .old {
+      transition: transform 0.5s;
+      
+    }
+    .btn-40 .old {
+        font-style: bold;
+      display: grid;
+      inset: 0;
+      font-style: bold;
+      place-content: center;
+      position: absolute;
+    }
+    .btn-40:hover .old {
+      transform: translateY(100%);
+    }
+    .btn-40 .new {
+        border-radius: 0;
+      font-size: 1rem;
+      background: rgb(49, 49, 49);
+      color: rgb(187, 194, 201);
+      display: grid;
+      inset: 0;
+      place-content: center;
+      pointer-events: none;
+      position: absolute;
+      transform: translateX(-100%);
+    }
+    .btn-40:hover .new {
+      transform: translateX(0);
     }
 
-    .span-contato {
-        display: none;
-    }
-
-    .contatos {
-        
-        display: flex;
-        flex-direction: column;
+    .btn-40 i {
+        font-size: 1.5em;
     }
 }
 
