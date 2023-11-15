@@ -9,6 +9,7 @@ const idadeAtual = document.getElementById('idadeAtual');
 
 idadeAtual.addEventListener('mouseenter', function() {
     printCod.style.display = "block";
+    printCod.style.zIndex = "1";
     setTimeout(function() {
         printCod.style.opacity = "1";
     }, 100);    
@@ -16,9 +17,7 @@ idadeAtual.addEventListener('mouseenter', function() {
     var idade = calcularIdade();
 
     idadeAtual.style.opacity = "0";
-    
-    
-    
+        
     setTimeout(function() {
         idadeAtual.textContent += ` ,  ${idade.meses} meses e ${idade.dias} dias.` 
         idadeAtual.style.opacity = "1";
@@ -62,16 +61,20 @@ function fadeTheme() {
     
     var body = document.body;
     var botoeshd = document.querySelectorAll('.botaoheader');
-    var botoesbd = document.querySelectorAll('.botaobody');
+    var botoesbd = document.querySelectorAll('.btn-40');
+    var fundobt = document.querySelectorAll('.btn-40 .new')
     var header = document.querySelector('.header');
     var botoesaudio = document.querySelectorAll('.audio-bt');
+    var returnBt = document.getElementById('returnHomeBt');
 
+    fundobt.forEach(function(fundo) {
+        fundo.style.background = "rgb(187, 194, 201)";
+    })
 
     if (theme == 1){
     body.classList.add('darkmode');
     header.classList.add('darkmodehd');
-
-    var returnBt = document.getElementById('returnHomeBt');
+    
     returnBt.style.color = 'white';
  
     botoesaudio.forEach(function(botao) {
@@ -79,7 +82,8 @@ function fadeTheme() {
     })
     
     for (var i = 0 ; i < botoesbd.length ; i++) {
-        botoesbd[i].style.color = 'white';
+        botoesbd[i].style.color = 'rgb(190, 196, 205)';
+
     }
 
     for (var i = 0 ; i < botoeshd.length ; i++) {
@@ -98,10 +102,15 @@ function fadeTheme() {
 
     var returnBt = document.getElementById('returnHomeBt');
     returnBt.style.color = 'black';
+
+    fundobt.forEach(function(fundo) {
+        fundo.style.background = "rgb(49, 49, 49)";
+    })
+
     
         
     for (var i = 0 ; i < botoesbd.length ; i++) {
-        botoesbd[i].style.color = 'black';
+        botoesbd[i].style.color = 'rgb(49, 49, 49)';
     }
 
     for (var i = 0 ; i < botoeshd.length ; i++) {

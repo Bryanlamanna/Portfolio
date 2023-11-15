@@ -300,11 +300,11 @@
     
     .darkmode {
         color: white;
-        background-color: rgb(36, 35, 43);
+        background-color: rgb(49, 49, 49);
     }
 
     .darkmodehd {
-        background-color: rgba(36, 35, 43, 0.8);
+        background-color: rgba(49, 49, 49, 50%);
     }
     
     .darkmodebotoes {
@@ -312,6 +312,7 @@
     }
 
     #idadeAtual {
+        
         width: 200px;
         cursor: help;
     }
@@ -645,6 +646,19 @@
         background-color: rgb(145, 145, 145);
     }
 
+    .botoes-projeto-left {
+        width: 5rem;
+    }
+
+    .botoes-projeto-left button {
+        margin-left: 0;
+    }
+
+    .botoes-projeto-right {
+        position: absolute;
+        right: 0;
+        width: 11rem;
+    }
 
     .descricao-projeto-left{
         display: block;
@@ -654,13 +668,13 @@
     }
 
     .descricao-projeto-right{
-        display: block;
+        
         text-align: right;
-        justify-content: start;
+        justify-content: right;
         max-width: 600px;
     }
 
-
+    
 
     .contact {
         
@@ -691,16 +705,23 @@
     }
     .btn-40 {
       -webkit-tap-highlight-color: transparent;
-      
       background-color: transparent;
       background-image: none;
       color: rgb(49, 49, 49);
       cursor: pointer;
       font-size: 1.1rem;
       line-height: 1.5;
+      margin: 7.5px;   
+      border: 2px solid;
+      box-sizing: border-box;
       
-     
+      overflow: hidden;
+      padding: 1rem 5rem;
+      position: relative;
+      transition:  .5s;
     }
+    
+    
     .btn-40:disabled {
       cursor: default;
     }
@@ -712,18 +733,28 @@
 
 
     .btn-40 {
-        margin: 15px;
+      margin: 7.5px;   
       border: 2px solid;
       box-sizing: border-box;
-      display: block;
+      
       overflow: hidden;
       padding: 1rem 5rem;
       position: relative;
-      
+      transition:  .5s;
     }
+
+    .btn-40:hover {
+        transform: translate(-3px,-3px);
+        box-shadow: 5px 5px 10px rgba(0,0, 0, 50%);
+    }
+
+    .btn-40:active {
+        transform: scale(90%);
+    }
+
     .btn-40 .new,
     .btn-40 .old {
-      transition: transform 0.5s;
+      transition:  0.5s;
       
     }
     .btn-40 .old {
@@ -755,6 +786,13 @@
 
     .btn-40 i {
         font-size: 1.5em;
+        color: #119fc4;
     }
+
+    .info-contatos h1 {
+        margin-bottom: 3rem;
+    }
+
+    
 }
 

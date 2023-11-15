@@ -15,7 +15,8 @@
             <source src="assets/hotline-miami-soundtrack-daisuke.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
-        <section class="header">
+        
+        <header class="header">
             <nav class="header-box">
                     <button id="darkmode-bt" onclick="fadeTheme()" class="botaoheader">
                         <i class="fa-solid fa-circle-half-stroke"></i>
@@ -37,7 +38,8 @@
                     </a>
                     
                 </nav   > 
-        </section>
+        </header>
+
     <main>
         <section class="home" id="inicio">
             <div class="home-box">
@@ -47,7 +49,7 @@
                             <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
                                 <button class="btn-40">
                                     <span class="new">
-                                        <i class="fa-brands fa-square-github"></i>
+                                        <i class="fa-brands fa-github"></i>
                                     </span>
                                     <span class="old">Github</span>
                                   </button>
@@ -101,7 +103,7 @@
                                     <span class="new">
                                         <i class="fa-regular fa-copy"></i>
                                     </span>
-                                    <span class="old">Copiar E-mail</span>
+                                    <span class="old">E-mail</span>
                                 </button>
                             
                         </div>    
@@ -267,11 +269,11 @@
                             Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
                             Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
                         </p>
-                        <div class="botoes-projeto">
+                        <div class="botoes-projeto-left">
                             <a href="" target="_blank">
                                 <button class="btn-40">
                                     <span class="new">
-                                        <i class="fa-brands fa-square-github"></i>
+                                        <i class="fa-brands fa-github"></i>
                                     </span>
                                     <span class="old">Repositório</span>
                                 </button>
@@ -298,11 +300,11 @@
                         Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
                         Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
                     </p>
-                    <div class="botoes-projeto">
+                    <div class="botoes-projeto-right">
                         <a href="" target="_blank">
                             <button class="btn-40">
                                 <span class="new">
-                                    <i class="fa-brands fa-square-github"></i>
+                                    <i class="fa-brands fa-github"></i>
                                 </span>
                                 <span class="old">Repositório</span>
                             </button>
@@ -409,11 +411,11 @@
                         Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
                         Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
                     </p>
-                    <div class="botoes-projeto">
+                    <div class="botoes-projeto-left">
                         <a href="" target="_blank">
                             <button class="btn-40">
                                 <span class="new">
-                                    <i class="fa-brands fa-square-github"></i>
+                                    <i class="fa-brands fa-github"></i>
                                 </span>
                                 <span class="old">Repositório</span>
                             </button>
@@ -440,11 +442,11 @@
                         Nulla, quod laboriosam. Impedit pariatur aspernatur fugit, ea assumenda nostrum hic illo? 
                         Voluptates provident, voluptatem voluptas ratione quia impedit? Quam, atque nisi.
                     </p>
-                    <div class="botoes-projeto">
+                    <div class="botoes-projeto-right">
                         <a href="" target="_blank">
                             <button class="btn-40">
                                 <span class="new">
-                                    <i class="fa-brands fa-square-github"></i>
+                                    <i class="fa-brands fa-github"></i>
                                 </span>
                                 <span class="old">Repositório</span>
                             </button>
@@ -510,6 +512,8 @@
                 <img src="assets/nano3.png" id="iconbear" alt="origami bear" title="imagem gerada utilizando o modelo Dall-E (openIA)">
             </div>    
 
+        <div class="info-contatos">    
+            <h1>Faça contato atrasvés das minhas redes:</h1>
             <div class="contatos">  
                
                 <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
@@ -533,7 +537,7 @@
                 <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
                     <button class="btn-40">
                         <span class="new">
-                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
                         </span>
                         <span class="old">Whatsapp</span>
                     </button>
@@ -542,13 +546,15 @@
                 <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
                     <button class="btn-40">
                         <span class="new">
-                            <i class="fa-brands fa-square-github"></i>
+                            <i class="fa-brands fa-github"></i>
                         </span>
                         <span class="old">Github</span>
                       </button>
                 </a>
 
             </div>
+        </div>
+
         </section>
                  
     </main>
@@ -558,9 +564,11 @@
             <i class="fa-solid fa-angles-up"></i>
         </button>
     </a>  
+
     <button id="pause-bt" class="audio-bt">
         <i class="fa-solid fa-volume-xmark"></i>
     </button>
+    
     <button id="play-bt" style="display: none;" class="audio-bt">
         <i class="fa-solid fa-volume-high"></i>
     </button>
