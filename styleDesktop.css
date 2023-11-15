@@ -392,7 +392,7 @@
 
     .icons-table i {
         font-feature-settings: "isol"; 
-
+        
         font-size: 70px;
         margin: 10px;   
         transition: .3s; 
