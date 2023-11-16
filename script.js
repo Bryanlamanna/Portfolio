@@ -6,6 +6,7 @@ const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
 
+fadeTheme();
 
 idadeAtual.addEventListener('mouseenter', function() {
     printCod.style.display = "block";
@@ -66,16 +67,22 @@ function fadeTheme() {
     var header = document.querySelector('.header');
     var botoesaudio = document.querySelectorAll('.audio-bt');
     var returnBt = document.getElementById('returnHomeBt');
+    var iconsSkill = document.querySelector('.icons-table');
+
+    
 
     fundobt.forEach(function(fundo) {
         fundo.style.background = "rgb(187, 194, 201)";
     })
 
     if (theme == 1){
+
     body.classList.add('darkmode');
     header.classList.add('darkmodehd');
     
     returnBt.style.color = 'white';
+
+    iconsSkill.style.color = 'white';
  
     botoesaudio.forEach(function(botao) {
         botao.style.color = "white";
@@ -94,19 +101,20 @@ function fadeTheme() {
     }
 
     botoesaudio.forEach(function(botao) {
-        botao.style.color = "black";
+        botao.style.color = "rgb(49,49,49)";
     })
 
     body.classList.remove('darkmode');
     header.classList.remove('darkmodehd');
 
     var returnBt = document.getElementById('returnHomeBt');
-    returnBt.style.color = 'black';
+    returnBt.style.color = 'rgb(49,49,49)';
 
     fundobt.forEach(function(fundo) {
         fundo.style.background = "rgb(49, 49, 49)";
     })
 
+    iconsSkill.style.color = 'rgb(49, 49, 49)';
     
         
     for (var i = 0 ; i < botoesbd.length ; i++) {
@@ -114,14 +122,24 @@ function fadeTheme() {
     }
 
     for (var i = 0 ; i < botoeshd.length ; i++) {
-        botoeshd[i].style.color = 'black';
+        botoeshd[i].style.color = 'rgb(49,49,49)';
     }
     theme=1;      
 }
 
 function copyEmail() {
+    var spanCopy = document.querySelector('.alert-copy');
 
     navigator.clipboard.writeText('LamannaBryan@gmail.com');
+
+   
+    spanCopy.style.opacity = '1';
+
+    setTimeout(function() {
+        spanCopy.style.opacity = '0';
+        
+    }, 5000); 
+    
 
 }
 

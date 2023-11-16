@@ -80,7 +80,7 @@
     }
 
     #returnHomeBt {
-        
+        animation: bounce 3s ease infinite;
         transition: 4s;
         background-color: transparent;
         font-size: 30px;
@@ -104,19 +104,13 @@
     @keyframes bounce {
         0% {
           transform: translateY(0);
-          color: aqua;
-        }
-        10%{
-            color: unset;
-        }      
-        80% {
+         
+        }   
+        50% {
             transform: translateY(-20px); /* Mova para c     10 pixels */
              /* Opacidade de 0.5 (fade) */
           }
-          97% {
-            color: auto;
-          }
-        
+         
         }
        
     html {
@@ -224,6 +218,11 @@
         align-items: center;
         text-align: left;
         font-size: 30px;         
+    }
+
+    .about-text button {
+        margin-left: 0;
+        margin-right: 15px;
     }
     
     #name {
@@ -383,6 +382,7 @@
     }
     
     .icons-table {
+        color: rgb(49,49,49);
         font-size: 13px;
         display: flex;
         align-items: center;
@@ -791,6 +791,21 @@
 
     .info-contatos h1 {
         margin-bottom: 3rem;
+    }
+
+    .alert-copy {
+       
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+        border-radius: 5px;
+        position: fixed;
+        right: 5%;
+        background-color: rgb(104, 104, 104);
+        bottom: 5%;
+        padding: 10px;
+        color: aliceblue;
+        cursor: default;
+        opacity: 0;
+        transition: .5s;
     }
 
     

@@ -90,7 +90,7 @@
                     </p>
                   
                         <div class="botoes-about">
-                                <a href="assets/CV de Bryan Lamanna.pdf" class="cv" target="_blank">
+                                <a href="assets/CV de Bryan Lamanna.pdf" target="_blank">
                                     <button class="btn-40">
                                         <span class="new">
                                             <i class="fa-solid fa-file-pdf"></i>
@@ -525,14 +525,13 @@
                     </button>
                 </a>  
                 
-                <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
-                    <button class="btn-40">
+                    <button onclick="copyEmail()" class="btn-40">
                         <span class="new">
                             <i class="fa-solid fa-envelope"></i>
                         </span>
                         <span class="old">E-mail</span>
                     </button>
-                </a>
+                
 
                 <a href="https://www.linkedin.com/in/bryan-lamanna-397zl/" target="_blank">
                     <button class="btn-40">
@@ -559,6 +558,10 @@
                  
     </main>
 
+    <span class="alert-copy">
+        Endereço de e-mail copiado para a area de transferência!
+    </span>
+
     <a href="#inicio" target="_self" rel="noopener noreferrer">
         <button id="returnHomeBt">
             <i class="fa-solid fa-angles-up"></i>
@@ -572,6 +575,7 @@
     <button id="play-bt" style="display: none;" class="audio-bt">
         <i class="fa-solid fa-volume-high"></i>
     </button>
+
 
     <script src="script.js"></script>
 </body>
