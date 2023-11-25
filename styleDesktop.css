@@ -5,7 +5,7 @@
     /*ESTILOS GERAIS PARA A PAGINA*/
 
     h1 {
-        color: #119fc4; 
+         
         font-size: 30px;
        
     }
@@ -212,7 +212,7 @@
 
      .home-box {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 80px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -227,7 +227,6 @@
     
     #name {
         color: #119fc4;
-        cursor: pointer;
         transition: .4s;
         border: none;
         background-color: transparent;
@@ -238,15 +237,113 @@
         font-size: 2.5rem;
     }
     
-    #name:hover {
-        outline: none;
-        border: none;
+    
+
+    .spanDev::before {   
+        text-align: right;  
+        width: 6em;
+        position: absolute;
+        content: '';   
         color: #119fc4;
-        cursor: pointer;
-        transform: translate(-1px,-1px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
-        background-color: transparent;
-    }    
+        animation: devcria 12s linear infinite;    
+        transform: translate(-25px,0);  
+    }
+
+    .spanDev::after {
+        position: absolute;
+    
+        content: ''; 
+        color:  #e3cb33;
+        transform: translate(223px,0);
+        animation: idesoluc 6s linear infinite; 
+    }
+
+    .ct-skills {
+        transform: translate(1.4em,-1.1em);
+        position: absolute;
+        width: 10em;
+        height: 40px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes switchSkill {
+        0%{
+            transform: translate(0,0);
+        }
+        
+        50%{
+            transform: translate(0,-200px);
+        }
+    
+        100%{
+            transform: translate(0,0);
+        }
+        
+    }
+
+    .spanSkill{
+        
+        animation: switchSkill 24s linear infinite;
+        
+        position: relative;
+        margin-left: 8px;
+        color: #e3cb33;
+    }
+
+    
+    
+  
+    @keyframes idesoluc {
+        0% {
+            content: 'soluções';
+            opacity: 0;
+        }
+        5%{
+            opacity: 1;
+        }
+        49%{
+            opacity: 1;
+        }
+        50%{
+           
+            opacity: 0;
+        }
+        55%{
+            opacity: 1;
+        }
+        100%{
+            content: 'ideias';
+        }
+    }
+
+    @keyframes devcria {
+        0% {
+            content: 'desenvolvo';
+            opacity: 0;
+        }
+        5%{
+            opacity: 1;
+        }
+        49%{
+            opacity: 1;
+        }
+        50%{
+           
+            opacity: 0;
+        }
+        55%{
+            opacity: 1;
+        }
+        100%{
+            content: 'crio';
+
+        }
+                
+    }
+   
+
 
     .bt a {
         text-decoration: 0;

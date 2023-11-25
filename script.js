@@ -1,12 +1,15 @@
 var theme = 1;
+fadeTheme();
 const targetItems = document.querySelectorAll('[data-anime]');
 const botaoPlay = document.getElementById('play-bt');
 const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
+var spansHome = document.querySelectorAll('.span-home');
+const spanSkill = document.querySelectorAll('.spanSkill');
 
-fadeTheme();
+
 
 idadeAtual.addEventListener('mouseenter', function() {
     printCod.style.display = "block";
