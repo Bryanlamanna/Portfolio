@@ -203,16 +203,21 @@
     .home {
         display: flex;
         justify-content: space-around;   
-        height: 700px;   
+        height: 650px;   
     }
 
     .botoes-home {
         display: flex;
+        margin-left: 1.48em;
+    }
+
+    .botoes-home button {
+        margin-right: 2px;
     }
 
      .home-box {
         width: 100%;
-        margin-top: 80px;
+        margin-top: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -254,42 +259,34 @@
     
         content: ''; 
         color:  #e3cb33;
-        transform: translate(223px,0);
+        transform: translate(225px,0);
         animation: idesoluc 6s linear infinite; 
     }
 
     .ct-skills {
-        transform: translate(1.4em,-1.1em);
+        transform: translate(5.4em,-1.19em);
         position: absolute;
         width: 10em;
-        height: 40px;
+        height: 3em;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        overflow: visible;
     }
 
-    @keyframes switchSkill {
-        0%{
-            transform: translate(0,0);
-        }
+    .ct-skills::before {
         
-        50%{
-            transform: translate(0,-200px);
-        }
+        content: 'com';
+        transform: translate(-1.85em,0);
+    }
     
-        100%{
-            transform: translate(0,0);
-        }
-        
-    }
-
     .spanSkill{
         
-        animation: switchSkill 24s linear infinite;
-        
-        position: relative;
+        transition: .5s;
+        opacity: 0;
+        position: absolute;
         margin-left: 8px;
-        color: #e3cb33;
+        color: #119fc4;
     }
 
     

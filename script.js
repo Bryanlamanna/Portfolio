@@ -6,9 +6,29 @@ const botaoPause = document.getElementById('pause-bt');
 const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
-var spansHome = document.querySelectorAll('.span-home');
-const spanSkill = document.querySelectorAll('.spanSkill');
+const spans = document.querySelectorAll('.spanSkill');
+var count = 0;
 
+spans[0].style.opacity = '1';    
+
+setInterval(() => {
+    switchSkill();
+}, 3000);
+
+function switchSkill() {
+
+    if (count>4) {count=0};
+
+    spans.forEach(function(span){
+        span.style.opacity = '0'
+    })
+
+    
+    spans[count].style.opacity = '1';
+   
+
+    count++;
+} 
 
 
 idadeAtual.addEventListener('mouseenter', function() {
