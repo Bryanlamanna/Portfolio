@@ -203,7 +203,7 @@
     .home {
         display: flex;
         justify-content: space-around;   
-        height: 650px;   
+        height: 600px;   
     }
 
     .botoes-home {

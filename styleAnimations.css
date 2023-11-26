@@ -1,7 +1,7 @@
 
 [data-anime] {
     opacity: 0; 
-    transition: 1s;
+    transition: 2.5s;
 }
 
 [data-anime="left"] {
@@ -24,7 +24,7 @@
 
 [data-animeHome] {
     opacity: 0; 
-    transition: 1s;
+    transition: 2s;
 }
 
 [data-animeHome="left"] {
