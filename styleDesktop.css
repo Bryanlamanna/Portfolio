@@ -250,7 +250,7 @@
         position: absolute;
         content: '';   
         color: #119fc4;
-        animation: devcria 12s linear infinite;    
+        animation: devcria 18s linear infinite;    
         transform: translate(-25px,0);  
     }
 
@@ -260,7 +260,7 @@
         content: ''; 
         color:  #e3cb33;
         transform: translate(225px,0);
-        animation: idesoluc 6s linear infinite; 
+        animation: idesoluc 12s linear infinite; 
     }
 
     .ct-skills {
