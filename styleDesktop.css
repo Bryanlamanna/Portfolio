@@ -441,7 +441,7 @@
    
     #profile {
         margin: 0;
-        height: 350px;
+        height: 400px;
         width: auto;
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0,0,0,50%);
@@ -482,6 +482,7 @@
         align-items: center;
         justify-content: center;   
         margin-top: 20px;     
+        margin-bottom: 1.5em;
     }
 
     .icons-table i {
@@ -516,7 +517,7 @@
         position: relative;
         justify-content: center;
         height: 10em;
-        width: 100%;
+        width: 120%;
         text-align: center;
     }
 

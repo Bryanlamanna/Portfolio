@@ -284,11 +284,7 @@ window.addEventListener('DOMContentLoaded', function() {
       }, delay);
     }
     
-    for (let i = 0; i < botoesSkill.length; i++) {
-      const delay = i * 100; 
-      applyAnimation(botoesSkill[i], delay);
-    }
-
+   
     const homeItems = document.querySelectorAll('[data-animeHome]');
     homeItems.forEach(item => {
         item.classList.add('animate');
