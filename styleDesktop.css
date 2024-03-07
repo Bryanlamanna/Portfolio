@@ -911,6 +911,16 @@
         transition: .5s;
     }
 
+    #message {
+        text-align: start;
+        justify-content: start;
+        width: 50%;
+        outline: none;
+        border: none;
+        height: 4em;
+        padding: 5px;
+        border-radius: 8px;
+    }
     
 }
 
