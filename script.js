@@ -7,28 +7,6 @@ const soundTrack = document.getElementById('track');
 const printCod = document.querySelector('.printCodigo');
 const idadeAtual = document.getElementById('idadeAtual');
 const spans = document.querySelectorAll('.spanSkill');
-var count = 0;
-
-spans[0].style.opacity = '1';    
-
-setInterval(() => {
-    switchSkill();
-}, 3000);
-
-function switchSkill() {
-
-    if (count>4) {count=0};
-
-    spans.forEach(function(span){
-        span.style.opacity = '0'
-    })
-
-    
-    spans[count].style.opacity = '1';
-   
-
-    count++;
-} 
 
 
 idadeAtual.addEventListener('mouseenter', function() {
@@ -184,7 +162,7 @@ function showSkill(index) {
 }
 
 function animeScroll() {
-    const windowTop = window.pageYOffset+600;
+    const windowTop = window.pageYOffset+800;
     targetItems.forEach(function(elemento) {
         if (windowTop > elemento.offsetTop){
             elemento.classList.add('animate');
@@ -212,25 +190,61 @@ function isElementInViewport(element) {
         button.style.opacity = "0";
     }
 };
-  
-function sectionActive() {  
-    var ancHome = document.querySelector('.info');
-    var ancAbout = document.querySelector('#text-about');
-    var ancSkill = document.querySelector('.tabela-tecnologias');
-    var ancProject = document.querySelector('.projeto');
 
-    var section = [ancHome, ancAbout, ancSkill, ancProject];
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.header-box a');
+    
+    function highlightCurrentSection() {
+        const currentSectionId = findCurrentSection();
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+                link.classList.add('sectionActive');
+            } else {
+                link.classList.remove('sectionActive');
+            }
+        });
+    }
+
+    function findCurrentSection() {
+        const sections = document.querySelectorAll('section');
+        let currentId = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 50) {
+                currentId = section.getAttribute('id');
+            }
+        });
+        return currentId;
+    }
+
+    highlightCurrentSection();
+
+    window.addEventListener('scroll', highlightCurrentSection);
+});
+
+  
+/*function sectionActive() {  
+    var ancHome = document.querySelector('.info');
+    var ancAbout = document.querySelector('#profile');
+    var ancSkill = document.querySelector('.tabela-tecnologias');
+    var ancProject = document.querySelector('.projects');
+    var ancContact = document.querySelector('.info-contatos');
+
+    var section = [ancHome, ancAbout, ancSkill, ancProject, ancContact];
 
     var headerSub = document.querySelectorAll('.botaoheader');
+    
+    
 
     for (var i = 0 ; i < section.length ; i++) {
         if (isElementInViewport(section[i])) {
+            console.log(section[i]);
             headerSub[i+1].classList.add('sectionActive');
         } else {
             headerSub[i+1].classList.remove('sectionActive');
         }
     }
-}
+}*/
 
 //função executada ao carregar a página
 
@@ -266,7 +280,6 @@ function calcularIdade() {
 
 window.addEventListener('scroll', function(){
     animeScroll();
-    sectionActive(); 
 })
 
 window.addEventListener('DOMContentLoaded', function() {

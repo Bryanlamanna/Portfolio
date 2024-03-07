@@ -42,7 +42,7 @@
 
 [data-animeSkill] {
     opacity: 0; 
-    transition: .5s;
+    transition: .3s;
 }
 
 [data-animeSkill="bottom"] {
