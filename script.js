@@ -9,6 +9,40 @@ const idadeAtual = document.getElementById('idadeAtual');
 const spans = document.querySelectorAll('.spanSkill');
 var count = 0;
 
+
+document.getElementById('messageForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que o formulário seja enviado da maneira tradicional
+
+    var formData = new FormData(this); // Obtemos os dados do formulário
+
+    // Transforma os dados do formulário em um objeto JSON
+    var jsonData = {};
+    formData.forEach(function(value, key){
+        jsonData[key] = value;
+    });
+
+    // Envia os dados para o Firebase Realtime Database
+    fetch('https://portfolio-1184f-default-rtdb.firebaseio.com/messages.json', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData)
+    })
+    .then(function(response) {
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            // Limpa o formulário após o envio
+            document.getElementById('messageForm').reset();
+        } else {
+            alert('Ocorreu um erro ao enviar a mensagem.');
+        }
+    })
+    .catch(function(error) {
+        console.error('Erro:', error);
+    });
+});
+
 spans[0].style.opacity = '1';    
 
 setInterval(() => {
