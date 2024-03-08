@@ -202,6 +202,8 @@ function copyEmail() {
 function showSkill(index) {
     var txtSkill = document.querySelectorAll('[data-animeSkill]');
     var skillIcon = document.querySelectorAll('.animeskill');
+    const skillHelp = document.querySelector('.skillHelp');
+    skillHelp.style.opacity = '0';
 
     skillIcon.forEach(icon => {
         icon.classList.remove('selected-icon')   
@@ -211,6 +213,7 @@ function showSkill(index) {
 
     txtSkill.forEach(txt => {
         txt.classList.remove('animate');
+
     });
     
     txtSkill[index].classList.add('animate');

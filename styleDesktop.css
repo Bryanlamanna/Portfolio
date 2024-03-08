@@ -354,6 +354,10 @@
         text-decoration: 0;
     }
     
+
+    .skillHelp {
+        transition: .2s;
+    }
    
     .botaobody {
         margin: 5px;
@@ -462,6 +466,8 @@
       margin-left: 3%;
       
     }
+
+    
 
     #text-about {
         margin-bottom: 0 ;
