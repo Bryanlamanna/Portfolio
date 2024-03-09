@@ -190,9 +190,11 @@ function copyEmail() {
 
    
     spanCopy.style.opacity = '1';
+    spanCopy.style.visibility = 'visible';  
 
     setTimeout(function() {
         spanCopy.style.opacity = '0';
+        spanCopy.style.visibility = 'hidden';
         
     }, 5000); 
     
